@@ -30,6 +30,13 @@ header p {
   font-size: 10px;
 }
 
+@media screen and (min-width: 1400px) {
+  header p {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
