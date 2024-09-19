@@ -6,15 +6,22 @@
   grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  text-align: center;
+  padding: 2% 0;
 }
 .footer__pages {
   display: grid;
+  row-gap: 25px;
 }
 .footer__coordonnees {
   display: grid;
 }
 .footer__plus {
   display: grid;
+}
+.footer__item {
+  color: #fff;
+  text-decoration: none;
 }
 
 header {
