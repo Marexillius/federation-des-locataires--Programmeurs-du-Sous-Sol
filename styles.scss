@@ -1,4 +1,4 @@
-@use "variables";
+@use "partials-scss/variables";
 
 
 .nav {
@@ -6,4 +6,10 @@
     display: flex;
     width: 100vw;
     margin: 0;
+}
+
+// Alexandre
+footer {
+    width: 100%;
+    background-color: variables.$lapisLazuli;
 }
