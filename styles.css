@@ -1,6 +1,33 @@
-footer {
+.footer {
   width: 100%;
   background-color: #1C5D99;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.footer__pages {
+  display: grid;
+}
+.footer__coordonnees {
+  display: grid;
+}
+.footer__plus {
+  display: grid;
+}
+
+header {
+  background-color: #1C5D99;
+  display: grid;
+  width: 100vw;
+  margin: 0;
+  grid-template-rows: 1fr auto;
+}
+
+header p {
+  display: inline-block;
+  font-size: 10px;
 }
 
 * {
