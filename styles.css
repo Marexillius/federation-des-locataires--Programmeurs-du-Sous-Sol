@@ -1,6 +1,21 @@
-.nav {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
   background-color: #1C5D99;
   display: flex;
   width: 100vw;
-  margin: 0;
+  flex-direction: column;
+}
+
+.projet {
+  background-color: #69aeee;
+  width: 100vw;
+}
+
+.projet p {
+  padding: 1%;
+  font-size: 10px;
 }/*# sourceMappingURL=styles.css.map */
