@@ -7,8 +7,14 @@
 
 header {
     background-color: #1C5D99;
-    display: flex;
+    display: grid;
     width: 100vw;
     margin: 0;
-  
+    grid-template-rows: 1fr auto
 }
+
+header p {
+    display: inline-block;
+    font-size: 10px;
+}
+
