@@ -4,3 +4,21 @@ $platinum: #D9D9D9;
 $steelBlue: #5180AB;
 $lapisLazuli: #1C5D99;
 $raisinBlack: #1A1423;
+
+//jay
+@font-face {
+    font-family: "Impact";
+    src: url(../assets/fonts/impact.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Metrophobic";
+    src: url(../assets/fonts/Metrophobic-Regular.ttf) format("truetype");
+}
+
+
+$fontSizeTitle : 12px;
+$fontSizeText : 10px;
+$fontSizeLogo : 32px;
+$FontLogo: "Impact";
+$FontText: "Metrophobic";
