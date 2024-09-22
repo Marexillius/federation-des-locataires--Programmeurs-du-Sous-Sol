@@ -20,14 +20,32 @@
 
     .projet {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 3fr 1fr;
 
         &__ButtonContainer {
-
+            text-align: left;
         }
 
         &__texte {
             font-size: variables.$ordiFontSizeText;
+            margin: 10px 0;
+        }
+
+        &__OriginalSite {
+            font-size: variables.$ordiFontSizeText;
+            height: 36px;
+            margin: 10px 0;
+            width: 50%;
+            float: left;
+        }
+
+        &__ClosePopUp {
+            background-color: variables.$steelBlue;
+            color: variables.$white;
+            font-size: variables.$ordiFontSizeText;
+            height: 36px;
+            margin: 10px 0;
+            width: 20%;
         }
     }
 
@@ -37,6 +55,6 @@
     }
 
     .grid {
-
+        //for navigation bar
     }
 }
