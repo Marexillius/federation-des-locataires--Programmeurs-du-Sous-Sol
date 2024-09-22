@@ -134,6 +134,9 @@ button {
     display: block;
     text-align: center;
   }
+  .grid {
+    position: block;
+  }
 }
 * {
   margin: 0;
