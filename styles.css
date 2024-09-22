@@ -77,7 +77,7 @@ a {
 }
 
 .projet {
-  background-color: #5ca3e6;
+  background-color: #5180AB;
   text-align: center;
   font-size: 10px;
 }
@@ -114,6 +114,7 @@ button {
   .projet__texte {
     font-size: 24px;
     margin: 10px 0;
+    color: #fff;
   }
   .projet__OriginalSite {
     font-size: 24px;
