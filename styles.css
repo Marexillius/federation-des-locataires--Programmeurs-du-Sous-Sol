@@ -16,6 +16,7 @@
        column-gap: 20px;
   text-align: center;
   padding: 2% 0;
+  font-family: "Metrophobic";
 }
 .footer__pages {
   display: grid;
@@ -44,6 +45,10 @@ header {
   font-size: 12px;
 }
 
+a {
+  font-family: "Metrophobic";
+}
+
 .grid-container {
   display: grid;
   grid-template-areas: "a a a e b" "a a a c c";
@@ -53,7 +58,7 @@ header {
 #grid-item:nth-child(1) {
   grid-area: a;
   height: 100%;
-  color: white;
+  color: #fff;
 }
 
 #grid-item:nth-child(2) {
@@ -83,22 +88,31 @@ button {
 }
 
 #logo {
-  color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #fff;
+  font-family: "Impact";
   font-size: 32px;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 768px) {
   header p {
     display: block;
     font-size: 30px;
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
-  header p {
+@media screen and (min-width: 1400px) {
+  a, p {
+    font-size: 24px;
+  }
+  .projet {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .projet__texte {
+    font-size: 24px;
+  }
+  header {
     display: block;
-    font-size: 30px;
     text-align: center;
   }
 }

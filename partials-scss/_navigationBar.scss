@@ -1,69 +1,73 @@
+@use "variables";
+//changed to variables -> jay
 
 header {
-    background-color: #1C5D99;
-    display: grid;
-    width: 100vw;
-    margin: 0;
-    grid-template-rows: auto auto
+  background-color: #1C5D99;
+  display: grid;
+  width: 100vw;
+  margin: 0;
+  grid-template-rows: auto auto
 }
 
 
-#nav-menu {
-    
-    font-size: 12px;
+#nav-menu {  
+  font-size: variables.$mobileFontSizeTitle;
 }
 
-
+a {
+  font-family: variables.$FontText;
+}
 
 
 .grid-container {
-    display: grid;
-    grid-template-areas: "a a a e b"
-                         "a a a c c";
-                         margin: 2% 3% ;
-  }
+  display: grid;
+  grid-template-areas: "a a a e b"
+                        "a a a c c";
+                        margin: 2% 3% ;
+}
   
 
   
-  #grid-item:nth-child(1) {
-    grid-area: a;
-    height: 100%;
-    color: white;
-  }
+#grid-item:nth-child(1) {
+  grid-area: a;
+  height: 100%;
+  color: variables.$white;
+}
   
   
-  #grid-item:nth-child(2) {
-    grid-area: b;
-    margin-left: 0;
-    width: 15vw;
-    height: 50%;
-  }
+#grid-item:nth-child(2) {
+  grid-area: b;
+  margin-left: 0;
+  width: 15vw;
+  height: 50%;
+}
   
-  #grid-item:nth-child(3) {
-    grid-area: c;
-    height: 50%;
-    width: 40vw;
-    background-color: #5ca3e6;
-    border: none;
-  }
+#grid-item:nth-child(3) {
+  grid-area: c;
+  height: 50%;
+  width: 40vw;
+  background-color: #5ca3e6;
+  border: none;
+}
 
 
 
 
 .projet {
-    background-color:#5ca3e6;
-    text-align: center;
-    font-size: 10px;
+  background-color:#5ca3e6;
+  text-align: center;
+  font-size: variables.$mobileFontSizeText;
 }
 
 button {
-    font-size: 10px;
-    border: none;
+  font-size: variables.$mobileFontSizeText;
+  border: none;
 }
 
+
 #logo {
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 32px;
+  color: variables.$white;
+  font-family: variables.$FontLogo;
+  font-size: variables.$mobileFontSizeLogo;
 }
 

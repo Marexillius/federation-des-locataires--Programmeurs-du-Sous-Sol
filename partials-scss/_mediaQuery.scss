@@ -1,18 +1,42 @@
 @use "variables";
 
 
-@media screen and (min-width: 1400px) {
-    header p {
-        display: block;
-        font-size: 30px;
-        text-align: center;
-    }
-}
-
+// tablette
 @media screen and (min-width: 768px) {
     header p {
         display: block;
         font-size: 30px;
         text-align: center;
+    }
+} 
+
+// ordi
+@media screen and (min-width: 1400px) {
+
+    //font sizes for all the site
+    a, p {
+        font-size: variables.$ordiFontSizeText; 
+    }
+
+    .projet {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        &__ButtonContainer {
+
+        }
+
+        &__texte {
+            font-size: variables.$ordiFontSizeText;
+        }
+    }
+
+    header  {
+        display: block;
+        text-align: center;
+    }
+
+    .grid {
+
     }
 }
