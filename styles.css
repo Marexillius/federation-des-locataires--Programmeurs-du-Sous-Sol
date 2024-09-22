@@ -7,16 +7,17 @@
   src: url(../assets/fonts/Metrophobic-Regular.ttf) format("truetype");
 }
 .footer {
-  width: 100%;
   background-color: #1C5D99;
   display: grid;
-  grid-template-rows: 1fr;
+  color: #fff;
+  font-family: "Metrophobic";
+  font-size: 10px;
+  grid-template-rows: 7fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
   text-align: center;
   padding: 2% 0;
-  font-family: "Metrophobic";
 }
 .footer__pages {
   display: grid;
@@ -31,6 +32,20 @@
 .footer__item {
   color: #fff;
   text-decoration: none;
+}
+.footer__logo {
+  font-family: "Impact";
+  font-size: 32px;
+}
+.footer__button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: solid 4px #fff;
+  width: 1fr;
+  border-radius: 10%;
+}
+.footer__copyright {
+  font-size: 8px;
 }
 
 header {
@@ -52,7 +67,6 @@ a {
 .grid-container {
   display: grid;
   grid-template-areas: "a a a e b" "a a a c c";
-  margin: 2% 3%;
 }
 
 #grid-item:nth-child(1) {

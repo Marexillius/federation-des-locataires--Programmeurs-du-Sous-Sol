@@ -4,10 +4,12 @@
 //            Alexandre
 // ################################
 .footer {
-    width: 100%;
     background-color: variables.$lapisLazuli;
     display: grid;
-    grid-template-rows: 1fr;
+    color: variables.$white;
+    font-family: variables.$FontText;
+    font-size: variables.$mobileFontSizeText;
+    grid-template-rows: 7fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     text-align: center;
@@ -26,6 +28,18 @@
         color: variables.$white;
         text-decoration: none;
     }
-
-    font-family: variables.$FontText; //jay
+    &__logo {
+        font-family: variables.$FontLogo;
+        font-size: variables.$mobileFontSizeLogo;
+    }
+    &__button {
+        background-color: variables.$rgbAlpha;
+        color: variables.$white;
+        border: solid 4px variables.$white;
+        width: 1fr;
+        border-radius: 10%;
+    }
+    &__copyright {
+        font-size: variables.$mobileFontSizeCopyright;
+    }
 }

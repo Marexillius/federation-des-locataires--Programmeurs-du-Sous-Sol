@@ -1,9 +1,12 @@
 // Alexandre
+@use "sass:color";
+
 $white: #fff;
 $platinum: #D9D9D9;
 $steelBlue: #5180AB;
 $lapisLazuli: #1C5D99;
 $raisinBlack: #1A1423;
+$rgbAlpha: rgba($color: #000000, $alpha: -1.0);
 
 //jay
 @font-face {
@@ -19,6 +22,7 @@ $raisinBlack: #1A1423;
 $mobileFontSizeTitle : 12px;
 $mobileFontSizeText : 10px;
 $mobileFontSizeLogo : 32px;
+$mobileFontSizeCopyright: 8px;
 $ordiFontSizeTitle : 40px;
 $ordiFontSizeText : 24px;
 $ordiFontSizeLogo : 60px;
