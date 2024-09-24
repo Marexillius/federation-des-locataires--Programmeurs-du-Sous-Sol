@@ -67,47 +67,97 @@ a {
   font-family: "Metrophobic";
 }
 
-.grid-container {
+.navbar {
   display: grid;
-  grid-template-areas: "a a a e b" "a a a c c";
+  grid-template-areas: "menu menu search search" "title title logo logo" "title title logo logo";
+  margin: 0 10px;
+  gap: 5px;
+  /*&__don {
+    margin-left: 0;
+    width: 1fr;       isnt even in the maquette??
+    padding: 1px;
+    height: 90%;
+    display: none;
+  }*/
 }
-
-#grid-item:nth-child(1) {
-  grid-area: a;
+.navbar__titre {
+  grid-area: title;
   height: 100%;
   color: #fff;
+  margin: 0;
 }
-
-#grid-item:nth-child(2) {
-  grid-area: b;
-  margin-left: 0;
-  width: 15vw;
-  height: 50%;
+.navbar__links {
+  grid-area: search;
+  align-self: start;
+  justify-self: start;
 }
-
-#grid-item:nth-child(3) {
-  grid-area: c;
+.navbar__search {
   height: 50%;
   width: 40vw;
   background-color: #5ca3e6;
   border: none;
 }
-
-.projet {
-  background-color: #5180AB;
-  text-align: center;
-  font-size: 10px;
-}
-
-button {
-  font-size: 10px;
-  border: none;
-}
-
-#logo {
-  color: #fff;
+.navbar__logo {
+  grid-area: logo;
   font-family: "Impact";
   font-size: 32px;
+  color: #fff;
+}
+.navbar__burger {
+  grid-area: menu;
+}
+.navbar__english {
+  font-family: "Metrophobic";
+  font-size: 10px;
+  color: #fff;
+  margin: 0;
+  text-align: right;
+}
+.navbar__joindre {
+  font-family: "Metrophobic";
+  font-size: 10px;
+  color: #fff;
+  margin: 0;
+  text-align: right;
+  display: none;
+}
+.navbar__membre {
+  font-family: "Metrophobic";
+  font-size: 10px;
+  color: #fff;
+  margin: 0;
+  text-align: right;
+  display: none;
+}
+
+.projet {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #5180AB;
+  gap: 5px;
+}
+.projet__texte {
+  font-size: 10px;
+  margin: 10px 0;
+  color: #fff;
+  padding-left: 20px;
+}
+.projet__OriginalSite {
+  font-size: 10px;
+  height: 36px;
+  margin: 10px 0;
+  width: 50%;
+  float: left;
+  border: none;
+}
+.projet__ClosePopUp {
+  background-color: #1C5D99;
+  color: #fff;
+  font-size: 10px;
+  height: 36px;
+  margin: 10px 0;
+  width: 20%;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -139,21 +189,77 @@ button {
     margin: 10px 0;
     width: 50%;
     float: left;
+    border: none;
   }
   .projet__ClosePopUp {
-    background-color: #5180AB;
+    background-color: #1C5D99;
     color: #fff;
     font-size: 24px;
     height: 36px;
     margin: 10px 0;
     width: 20%;
+    border: none;
   }
   header {
     display: block;
     text-align: center;
   }
-  .grid {
-    position: block;
+  .navbar {
+    display: grid;
+    grid-template-areas: "logo logo logo search search search" "title title title search search search" "links links links links links links";
+    margin: 0 50px;
+    gap: 5px;
+  }
+  .navbar__titre {
+    grid-area: title;
+    height: 100%;
+    color: #fff;
+    margin: 0;
+    max-width: 60%;
+    text-align: left;
+    font-size: 24px;
+  }
+  .navbar__links {
+    grid-area: search;
+  }
+  .navbar__search {
+    height: 50%;
+    width: 40vw;
+    height: 30px;
+    background-color: #5ca3e6;
+    border: none;
+  }
+  .navbar__logo {
+    grid-area: logo;
+    font-family: "Impact";
+    font-size: 60px;
+    color: #fff;
+    text-align: left;
+  }
+  .navbar__burger {
+    grid-area: menu;
+    display: none;
+  }
+  .navbar__collapse {
+    grid-area: links;
+    width: 100%;
+  }
+  .navbar__accueil, .navbar__nouvelles, .navbar__services, .navbar__equipes, .navbar__FAQ, .navbar__propos {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Metrophobic";
+  }
+  .navbar__english {
+    display: block;
+    font-size: 24px;
+  }
+  .navbar__joindre {
+    display: block;
+    font-size: 24px;
+  }
+  .navbar__membre {
+    display: block;
+    font-size: 24px;
   }
 }
 * {

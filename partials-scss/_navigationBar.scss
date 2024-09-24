@@ -19,55 +19,110 @@ a {
   font-family: variables.$FontText;
 }
 
-
-.grid-container {
+.navbar {
   display: grid;
-  grid-template-areas: "a a a e b"
-                        "a a a c c";
-}
-  
+  grid-template-areas: "menu menu search search"
+                        "title title logo logo"
+                        "title title logo logo";
+  margin: 0 10px;
+  gap: 5px;
 
-  
-#grid-item:nth-child(1) {
-  grid-area: a;
-  height: 100%;
-  color: variables.$white;
-}
-  
-  
-#grid-item:nth-child(2) {
-  grid-area: b;
-  margin-left: 0;
-  width: 15vw;
-  height: 50%;
-}
-  
-#grid-item:nth-child(3) {
-  grid-area: c;
+  &__titre {
+    grid-area: title;
+    height: 100%;
+    color: variables.$white;
+    margin: 0;
+  }
+
+  /*&__don {
+    margin-left: 0;
+    width: 1fr;       isnt even in the maquette??
+    padding: 1px;
+    height: 90%;
+    display: none;
+  }*/
+
+  &__links {
+    grid-area: search;
+    align-self : start ;
+    justify-self : start ;
+  }
+
+  &__search {
   height: 50%;
   width: 40vw;
   background-color: #5ca3e6;
   border: none;
+  }
+
+  &__logo {
+    grid-area: logo;
+    font-family: variables.$FontLogo;
+    font-size: variables.$mobileFontSizeLogo;
+    color: variables.$white;
+  }
+
+  &__burger {
+    grid-area: menu;
+  }
+
+  &__english {
+    font-family: variables.$FontText;
+    font-size: variables.$mobileFontSizeText;
+    color: variables.$white;
+    margin: 0;
+    text-align: right;
+  }
+
+  &__joindre {
+    font-family: variables.$FontText;
+    font-size: variables.$mobileFontSizeText;
+    color: variables.$white;
+    margin: 0;
+    text-align: right;
+    display: none;
+  }
+
+  &__membre {
+    font-family: variables.$FontText;
+    font-size: variables.$mobileFontSizeText;
+    color: variables.$white;
+    margin: 0;
+    text-align: right;
+    display: none;
+  }
 }
-
-
-
 
 .projet {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   background-color: variables.$steelBlue;
-  text-align: center;
-  font-size: variables.$mobileFontSizeText;
-}
+  gap: 5px;
 
-button {
-  font-size: variables.$mobileFontSizeText;
-  border: none;
-}
+  &__texte {
+    font-size: variables.$mobileFontSizeText;
+    margin: 10px 0;
+    color: variables.$white;
+    padding-left: 20px;
+  }
 
+  &__OriginalSite {
+    font-size: variables.$mobileFontSizeText;
+    height: 36px;
+    margin: 10px 0;
+    width: 50%;
+    float: left;
+    border:none;
+  }
 
-#logo {
-  color: variables.$white;
-  font-family: variables.$FontLogo;
-  font-size: variables.$mobileFontSizeLogo;
+  &__ClosePopUp {
+    background-color: variables.$lapisLazuli;
+    color: variables.$white;
+    font-size: variables.$mobileFontSizeText;
+    height: 36px;
+    margin: 10px 0;
+    width: 20%;
+    border:none;
+  }
 }
 

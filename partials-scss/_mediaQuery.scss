@@ -38,15 +38,17 @@
             margin: 10px 0;
             width: 50%;
             float: left;
+            border:none;
         }
 
         &__ClosePopUp {
-            background-color: variables.$steelBlue;
+            background-color: variables.$lapisLazuli;
             color: variables.$white;
             font-size: variables.$ordiFontSizeText;
             height: 36px;
             margin: 10px 0;
             width: 20%;
+            border:none;
         }
     }
 
@@ -55,8 +57,74 @@
         text-align: center;
     }
 
-    .grid {
-        //for navigation bar
-        position: block; //to fix
-    }
+    .navbar {
+        display: grid;
+        grid-template-areas: "logo logo logo search search search"
+                              "title title title search search search"
+                              "links links links links links links";
+        margin: 0 50px;
+        gap: 5px;
+      
+        &__titre {
+          grid-area: title;
+          height: 100%;
+          color: variables.$white;
+          margin: 0;
+          max-width: 60%;
+          text-align: left;
+          font-size: variables.$ordiFontSizeText;
+        }
+      
+        &__links {
+          grid-area: search;
+        }
+      
+        &__search {
+        height: 50%;
+        width: 40vw;
+        height: 30px;
+        background-color: #5ca3e6;
+        border: none;
+        }
+      
+        &__logo {
+          grid-area: logo;
+          font-family: variables.$FontLogo;
+          font-size: variables.$ordiFontSizeLogo;
+          color: variables.$white;
+          text-align: left;
+        }
+      
+        &__burger {
+          grid-area: menu;
+          display: none; //not sure about this...
+        }
+
+        &__collapse {
+            grid-area: links;
+            width: 100%;
+        }
+
+        //to modify the nav links
+        &__accueil, &__nouvelles, &__services, &__equipes, &__FAQ, &__propos {
+            color: variables.$white;
+            font-size: variables.$ordiFontSizeText;
+            font-family: variables.$FontText;
+        }
+      
+        &__english {
+            display: block;
+            font-size: variables.$ordiFontSizeText;
+        }
+      
+        &__joindre {
+            display: block;
+            font-size: variables.$ordiFontSizeText;
+        }
+      
+        &__membre {
+          display: block;
+          font-size: variables.$ordiFontSizeText;
+        }
+      }
 }

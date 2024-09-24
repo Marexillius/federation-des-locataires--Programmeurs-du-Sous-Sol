@@ -21,46 +21,53 @@
         </div>
 
     </div>
-    <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-xxl">
+        <div class="container navbar__collapse">
             
             
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+            <button class="navbar-toggler navbar__burger" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><a id="logo" href="#accueil" class="nav-link">FLHLMQ</a></image></a>
+           
             <!-- Hamburger button -->
             <!-- Navigation -->
-            <div id="mainNav" class="collapse navbar-collapse">
+            <div id="mainNav" class="collapse navbar-collapse ">
                 
-                <ul id="nav-menu" class="navbar-nav d-flex w-100 justify-content-between   ">
-                    <li class="nav-item">
-                        <a href="#appli" class="nav-link">Accueil</a>
+                <ul id="nav-menu" class="navbar-nav d-flex w-100 justify-content-between">
+                    <li class="nav-item navbar__accueil">
+                        <a href="#appli" class="nav-link navbar__accueil">Accueil</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#fonctionnalités" class="nav-link">Nouvelles</a>
+                    <li class="nav-item navbar__nouvelles">
+                        <a href="#fonctionnalités" class="nav-link navbar__nouvelles">Nouvelles</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#en_voir_plus" class="nav-link">Services</a>
+                    <li class="nav-item navbar__services">
+                        <a href="#en_voir_plus" class="nav-link navbar__services">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#témoignages" class="nav-link">Équipes</a>
+                    <li class="nav-item navbar__equipes">
+                        <a href="#témoignages" class="nav-link navbar__equipes">Équipes</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#FAQ" class="nav-link">FAQ</a>
+                    <li class="nav-item navbar__FAQ">
+                        <a href="#FAQ" class="nav-link navbar__FAQ">FAQ</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#infolettre" class="nav-link">À propos</a>
+                    <li class="nav-item navbar__propos">
+                        <a href="#infolettre" class="nav-link navbar__propos">À propos</a>
                     </li>
                 </ul>
             </div>
             
         </div>
-        <div class="grid-container grid">
-            <p id="grid-item" class="grid__titre" >Fédération des locataires d’habitations à loyer modique du Québec</p>
-            <button id="grid-item" class="don grid__don">Soutenir</button>
-            <input id="grid-item" class="search grid__search" type="text" placeholder="Search..">
+        <a class="navbar-brand navbar__logo" href="index.html"><a id="logo" href="#accueil" class="nav-link navbar__logo">FLHLMQ</a></image><!--wtf does this img even do??--></a>
+        
+        <p class="navbar__titre" >Fédération des locataires d’habitations à loyer modique du Québec</p>
+        <!--<button class="don navbar__don">Soutenir</button>-->
+        <div class="navbar__links">
+            <p class="navbar__english">English</p>
+            <p class="navbar__joindre">Nous-joindre</p>
+            <p class="navbar__membre">Devenez membre</p>
+            <input class="navbar__search" type="text" placeholder="Rechercher...">            
         </div>
+
+        
         
         
         
