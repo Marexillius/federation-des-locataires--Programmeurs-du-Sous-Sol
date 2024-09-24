@@ -63,7 +63,8 @@
                               "title title title search search search"
                               "links links links links links links";
         margin: 0 50px;
-        gap: 5px;
+        gap: px;
+
       
         &__titre {
           grid-area: title;
@@ -78,22 +79,34 @@
         &__links {
           grid-area: search;
         }
-      
+        &__logo {
+            grid-area: logo;
+            font-family: variables.$FontLogo;
+            font-size: variables.$ordiFontSizeLogo;
+            color: variables.$white;
+            text-align: left;
+          }
+        &__button {
+            grid-area: search;
+            margin:5px 0 10px auto;
+            padding: 1% 2%;
+            border: 3px solid variables.$white;
+            display: block;
+            color: variables.$raisinBlack;
+            font-size: variables.$ordiFontSizeText;
+            border-radius: 5px;
+            
+          }
         &__search {
         height: 50%;
         width: 40vw;
         height: 30px;
-        background-color: #5ca3e6;
+        background-color: variables.$steelBlue;
         border: none;
+        color: white;
         }
       
-        &__logo {
-          grid-area: logo;
-          font-family: variables.$FontLogo;
-          font-size: variables.$ordiFontSizeLogo;
-          color: variables.$white;
-          text-align: left;
-        }
+
       
         &__burger {
           grid-area: menu;
@@ -122,9 +135,6 @@
             font-size: variables.$ordiFontSizeText;
         }
       
-        &__membre {
-          display: block;
-          font-size: variables.$ordiFontSizeText;
-        }
+
       }
 }
