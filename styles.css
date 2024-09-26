@@ -373,6 +373,7 @@ a {
 
 /*Alexandre*/
 .membre {
+  grid-area: 5/2/6/7;
   display: flex;
   justify-content: center;
 }
@@ -384,7 +385,8 @@ a {
   border: solid 3px #1A1423;
   font-family: "Metrophobic";
   padding: 4%;
-  width: 90%;
+  width: 100%;
+  height: 30%;
 }
 .membre__titre {
   font-size: 12px;
@@ -428,13 +430,14 @@ a {
 
 /*Alexandre*/
 .temoignages {
+  grid-area: 4/2/5/7;
   display: flex;
   justify-content: center;
 }
 .temoignages__container {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   font-family: "Metrophobic";
   color: #fff;
 }
