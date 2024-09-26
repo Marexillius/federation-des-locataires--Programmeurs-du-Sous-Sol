@@ -2,16 +2,35 @@
 
 
 .nouvelles {
+    grid-area: 1/2/2/7;
     width: 100%;
-
+        &__boxtitre{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__titre{
+            display: inline-block;
+            align-self: self-end;
+            margin: 0;
+        }
+        &__lien{
+            display: inline-block;
+            color: variables.$steelBlue;
+            text-decoration: none;
+            align-self: self-end;
+            
+        }
         &__grid-container{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 15px;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 20px;
+            background-color:variables.$silver;
+            padding: 20px;
+            
         }
         &__Item {
             background-color: variables.$platinum;
-          
+    
         }
         &__img {
             text-align: center;
