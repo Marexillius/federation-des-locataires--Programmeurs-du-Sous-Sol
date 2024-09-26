@@ -364,6 +364,13 @@ a {
     font-size: 24px;
   }
 }
+.body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr) 30px;
+  margin-top: 30px;
+}
+
 /*Alexandre*/
 .membre {
   display: flex;
