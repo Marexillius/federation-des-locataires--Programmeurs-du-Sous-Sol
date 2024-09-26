@@ -72,13 +72,6 @@ a {
   grid-template-areas: "menu menu logo logo" "title title search search" "title title search search";
   margin: 0 10px;
   gap: 5px;
-  /*&__don {
-    margin-left: 0;
-    width: 1fr;       isnt even in the maquette??
-    padding: 1px;
-    height: 90%;
-    display: none;
-  }*/
 }
 .navbar__titre {
   grid-area: title;
@@ -274,7 +267,7 @@ a {
   }
   .projet {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   .projet__ButtonContainer {
     text-align: left;
