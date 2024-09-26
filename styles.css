@@ -260,6 +260,53 @@ a {
     display: block;
     font-size: 12px;
   }
+  .nouvelles {
+    grid-area: 1/2/2/7;
+    width: 100%;
+  }
+  .nouvelles__boxtitre {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nouvelles__titre {
+    display: inline-block;
+    align-self: self-end;
+    margin: 0;
+  }
+  .nouvelles__lien {
+    display: inline-block;
+    color: #5180AB;
+    text-decoration: none;
+    align-self: self-end;
+  }
+  .nouvelles__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #C7C7C7;
+    padding: 20px;
+  }
+  .nouvelles__Item {
+    background-color: #D9D9D9;
+  }
+  .nouvelles__img {
+    text-align: center;
+    background-size: contain;
+    width: 100%;
+    border: 1px solid #1A1423;
+  }
+  .nouvelles__titreCarte {
+    text-align: center;
+  }
+  .nouvelles__paraCarte {
+    text-align: center;
+  }
+  .nouvelles__filtrer {
+    background-color: #1C5D99;
+    color: #fff;
+    padding: 15px;
+  }
 }
 @media screen and (min-width: 1400px) {
   a, p, button {
@@ -363,6 +410,53 @@ a {
     display: block;
     font-size: 24px;
   }
+  .nouvelles {
+    grid-area: 1/2/2/7;
+    width: 100%;
+  }
+  .nouvelles__boxtitre {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nouvelles__titre {
+    display: inline-block;
+    align-self: self-end;
+    margin: 0;
+  }
+  .nouvelles__lien {
+    display: inline-block;
+    color: #5180AB;
+    text-decoration: none;
+    align-self: self-end;
+  }
+  .nouvelles__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-color: #C7C7C7;
+    padding: 20px;
+  }
+  .nouvelles__Item {
+    background-color: #D9D9D9;
+  }
+  .nouvelles__img {
+    text-align: center;
+    background-size: contain;
+    width: 100%;
+    border: 1px solid #1A1423;
+  }
+  .nouvelles__titreCarte {
+    text-align: center;
+  }
+  .nouvelles__paraCarte {
+    text-align: center;
+  }
+  .nouvelles__filtrer {
+    background-color: #1C5D99;
+    color: #fff;
+    padding: 15px;
+  }
 }
 .body {
   display: grid;
@@ -401,12 +495,30 @@ a {
 }
 
 .nouvelles {
+  grid-area: 1/2/2/7;
   width: 100%;
+}
+.nouvelles__boxtitre {
+  display: flex;
+  justify-content: space-between;
+}
+.nouvelles__titre {
+  display: inline-block;
+  align-self: self-end;
+  margin: 0;
+}
+.nouvelles__lien {
+  display: inline-block;
+  color: #5180AB;
+  text-decoration: none;
+  align-self: self-end;
 }
 .nouvelles__grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+  background-color: #C7C7C7;
+  padding: 20px;
 }
 .nouvelles__Item {
   background-color: #D9D9D9;
