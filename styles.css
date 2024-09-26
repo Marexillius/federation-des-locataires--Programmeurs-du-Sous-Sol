@@ -395,6 +395,32 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/*Alexandre*/
+.temoignages {
+  display: flex;
+  justify-content: center;
+}
+.temoignages__container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-family: "Metrophobic";
+  color: #fff;
+}
+.temoignages__titre {
+  font-size: 12px;
+  color: #1A1423;
+}
+.temoignages__carte {
+  background-color: #1C5D99;
+}
+.temoignages__nom {
+  font-size: 12px;
+}
+.temoignages__description {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
