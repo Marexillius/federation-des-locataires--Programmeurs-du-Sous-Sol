@@ -1,17 +1,26 @@
 @use "variables";
 /*Alexandre*/
-.membre_container {
+.membre {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: solid 3px variables.$raisinBlack;
-    font-family: variables.$FontText;
-    padding: 0 4%;
-    .membre__titre {
+    &_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: solid 3px variables.$raisinBlack;
+        font-family: variables.$FontText;
+        padding: 4%;
+        width: 90%;
+    }
+    &__titre {
         font-size: variables.$mobileFontSizeTitle;
     }
-    .membre__description {
+    &__description {
         font-size: variables.$mobileFontSizeText;
+    }
+    &__bouton {
+        font-size: variables.$mobileFontSizeTitle;
+        padding: 1%;
     }
 }
