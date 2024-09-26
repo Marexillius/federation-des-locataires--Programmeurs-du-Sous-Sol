@@ -364,6 +364,13 @@ a {
     font-size: 24px;
   }
 }
+.body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr) 30px;
+  margin-top: 30px;
+}
+
 /*Alexandre*/
 .membre {
   display: flex;
@@ -390,9 +397,33 @@ a {
   padding: 1%;
 }
 
-.nouvelles .nouvelles__grid-container {
+.nouvelles {
+  width: 100%;
+}
+.nouvelles__grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.nouvelles__Item {
+  background-color: #D9D9D9;
+}
+.nouvelles__img {
+  text-align: center;
+  background-size: contain;
+  width: 100%;
+  border: 1px solid #1A1423;
+}
+.nouvelles__titreCarte {
+  text-align: center;
+}
+.nouvelles__paraCarte {
+  text-align: center;
+}
+.nouvelles__filtrer {
+  background-color: #1C5D99;
+  color: #fff;
+  padding: 15px;
 }
 
 /*Alexandre*/
