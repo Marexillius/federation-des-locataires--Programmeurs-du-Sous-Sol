@@ -374,6 +374,7 @@ a {
 
 /*Alexandre*/
 .membre {
+  grid-area: 5/2/6/7;
   display: flex;
   justify-content: center;
 }
@@ -385,7 +386,8 @@ a {
   border: solid 3px #1A1423;
   font-family: "Metrophobic";
   padding: 4%;
-  width: 90%;
+  width: 100%;
+  height: 30%;
 }
 .membre__titre {
   font-size: 12px;
@@ -398,9 +400,60 @@ a {
   padding: 1%;
 }
 
-.nouvelles .nouvelles__grid-container {
+.nouvelles {
+  width: 100%;
+}
+.nouvelles__grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.nouvelles__Item {
+  background-color: #D9D9D9;
+}
+.nouvelles__img {
+  text-align: center;
+  background-size: contain;
+  width: 100%;
+  border: 1px solid #1A1423;
+}
+.nouvelles__titreCarte {
+  text-align: center;
+}
+.nouvelles__paraCarte {
+  text-align: center;
+}
+.nouvelles__filtrer {
+  background-color: #1C5D99;
+  color: #fff;
+  padding: 15px;
+}
+
+/*Alexandre*/
+.temoignages {
+  grid-area: 4/2/5/7;
+  display: flex;
+  justify-content: center;
+}
+.temoignages__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Metrophobic";
+  color: #fff;
+}
+.temoignages__titre {
+  font-size: 12px;
+  color: #1A1423;
+}
+.temoignages__carte {
+  background-color: #1C5D99;
+}
+.temoignages__nom {
+  font-size: 12px;
+}
+.temoignages__description {
+  font-size: 10px;
 }
 
 * {
