@@ -165,10 +165,107 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  header p {
+  a, p, button {
+    font-size: 12px;
+  }
+  .projet {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  .projet__ButtonContainer {
+    text-align: left;
+  }
+  .projet__texte {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #fff;
+    text-align: right;
+    margin: auto 0;
+  }
+  .projet__OriginalSite {
+    font-size: 12px;
+    height: 36px;
+    margin: 10px 0;
+    width: 50%;
+    max-width: 150px;
+    float: left;
+    border: none;
+  }
+  .projet__ClosePopUp {
+    background-color: #1C5D99;
+    color: #fff;
+    font-size: 12px;
+    height: 36px;
+    margin: 10px 0;
+    width: 20%;
+    max-width: 60px;
+    border: none;
+  }
+  .navbar {
+    display: grid;
+    grid-template-areas: "logo logo logo search search search" "title title title search search search" "links links links links links links";
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .navbar__titre {
+    grid-area: title;
+    height: 100%;
+    color: #fff;
+    margin: 0;
+    max-width: 70%;
+    max-height: 200px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .navbar__links {
+    grid-area: search;
+  }
+  .navbar__logo {
+    grid-area: logo;
+    font-family: "Impact";
+    font-size: 40px;
+    color: #fff;
+    text-align: left;
+  }
+  .navbar__button {
+    grid-area: search;
+    margin: 5px 0 10px auto;
+    padding: 1% 2%;
+    border: 3px solid #fff;
     display: block;
-    font-size: 30px;
-    text-align: center;
+    color: #1A1423;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .navbar__search {
+    height: 50%;
+    width: 40vw;
+    height: 30px;
+    background-color: #5180AB;
+    border: none;
+    color: white;
+  }
+  .navbar__burger {
+    grid-area: menu;
+    display: none;
+  }
+  .navbar__collapse {
+    grid-area: links;
+    width: 100%;
+  }
+  .navbar__accueil, .navbar__nouvelles, .navbar__services, .navbar__equipes, .navbar__FAQ, .navbar__propos {
+    color: #fff;
+    font-size: 12px;
+    font-family: "Metrophobic";
+  }
+  .navbar__english {
+    display: block;
+    font-size: 12px;
+  }
+  .navbar__joindre {
+    display: block;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -211,8 +308,8 @@ a {
   .navbar {
     display: grid;
     grid-template-areas: "logo logo logo search search search" "title title title search search search" "links links links links links links";
-    margin: 0 50px;
-    gap: px;
+    margin: 0 10vw;
+    gap: 10px;
   }
   .navbar__titre {
     grid-area: title;
@@ -246,6 +343,7 @@ a {
   .navbar__search {
     height: 50%;
     width: 40vw;
+    max-width: 500px;
     height: 30px;
     background-color: #5180AB;
     border: none;

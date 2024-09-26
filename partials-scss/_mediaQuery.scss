@@ -3,11 +3,135 @@
 
 // tablette
 @media screen and (min-width: 768px) {
-    header p {
-        display: block;
-        font-size: 30px;
-        text-align: center;
+
+    //font sizes for all the site
+    a, p, button {
+        font-size: variables.$tabletFontSizeText; 
     }
+
+
+    .projet {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+
+        &__ButtonContainer {
+            text-align: left;
+        }
+
+        &__texte {
+            font-size: variables.$tabletFontSizeText;
+            margin: 10px 0;
+            color: variables.$white;
+            text-align: right;
+            margin: auto 0;
+        }
+
+        &__OriginalSite {
+            font-size: variables.$tabletFontSizeText;
+            height: 36px;
+            margin: 10px 0;
+            width: 50%;
+            max-width: 150px;
+            float: left;
+            border:none;
+        }
+
+        &__ClosePopUp {
+            background-color: variables.$lapisLazuli;
+            color: variables.$white;
+            font-size: variables.$tabletFontSizeText;
+            height: 36px;
+            margin: 10px 0;
+            width: 20%;
+            max-width: 60px;
+            border:none;
+        }
+    }
+
+
+    .navbar {
+        display: grid;
+        grid-template-areas: "logo logo logo search search search"
+                              "title title title search search search"
+                              "links links links links links links";
+        margin: 0 auto;
+        gap: 10px;
+
+      
+        &__titre {
+          grid-area: title;
+          height: 100%;
+          color: variables.$white;
+          margin: 0;
+          max-width: 70%;
+          max-height: 200px;
+          text-align: left;
+          font-size: variables.$tabletFontSizeText;
+        }
+      
+        &__links {
+          grid-area: search;
+        }
+        &__logo {
+            grid-area: logo;
+            font-family: variables.$FontLogo;
+            font-size: variables.$tabletFontSizeLogo;
+            color: variables.$white;
+            text-align: left;
+
+          }
+        &__button {
+            grid-area: search;
+            margin:5px 0 10px auto;
+            padding: 1% 2%;
+            border: 3px solid variables.$white;
+            display: block;
+            color: variables.$raisinBlack;
+            font-size: variables.$tabletFontSizeText;
+            border-radius: 5px;
+            
+          }
+        &__search {
+        height: 50%;
+        width: 40vw;
+        height: 30px;
+        background-color: variables.$steelBlue;
+        border: none;
+        color: white;
+        }
+      
+
+      
+        &__burger {
+          grid-area: menu;
+          display: none; //not sure about this...
+        }
+
+        &__collapse {
+            grid-area: links;
+            width: 100%;
+        }
+
+        //to modify the nav links
+        &__accueil, &__nouvelles, &__services, &__equipes, &__FAQ, &__propos {
+            color: variables.$white;
+            font-size: variables.$tabletFontSizeText;
+            font-family: variables.$FontText;
+        }
+      
+        &__english {
+            display: block;
+            font-size: variables.$tabletFontSizeText;
+        }
+      
+        &__joindre {
+            display: block;
+            font-size: variables.$tabletFontSizeText;
+        }
+      
+
+      }
 } 
 
 // ordi
@@ -62,8 +186,8 @@
         grid-template-areas: "logo logo logo search search search"
                               "title title title search search search"
                               "links links links links links links";
-        margin: 0 50px;
-        gap: px;
+        margin: 0 10vw;
+        gap: 10px;
 
       
         &__titre {
@@ -79,13 +203,15 @@
         &__links {
           grid-area: search;
         }
+
         &__logo {
             grid-area: logo;
             font-family: variables.$FontLogo;
             font-size: variables.$ordiFontSizeLogo;
             color: variables.$white;
             text-align: left;
-          }
+        }
+
         &__button {
             grid-area: search;
             margin:5px 0 10px auto;
@@ -94,19 +220,18 @@
             display: block;
             color: variables.$raisinBlack;
             font-size: variables.$ordiFontSizeText;
-            border-radius: 5px;
-            
-          }
+            border-radius: 5px;    
+        }
+
         &__search {
         height: 50%;
         width: 40vw;
+        max-width: 500px;
         height: 30px;
         background-color: variables.$steelBlue;
         border: none;
         color: white;
         }
-      
-
       
         &__burger {
           grid-area: menu;
