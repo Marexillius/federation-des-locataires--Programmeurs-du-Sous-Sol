@@ -1,0 +1,30 @@
+@use "variables";
+/*Alexandre*/
+.temoignages {
+    grid-area: 4/2/5/7;
+    display: flex;
+    justify-content: center;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: variables.$FontText;
+        color: variables.$white;
+    }
+    &__titre {
+        font-size: variables.$mobileFontSizeTitle;
+        color: variables.$raisinBlack;
+    }
+    &__carte {
+        background-color: variables.$lapisLazuli;
+    }
+    &__image {
+
+    }
+    &__nom {
+        font-size: variables.$mobileFontSizeTitle;;
+    }
+    &__description {
+        font-size: variables.$mobileFontSizeText;
+    }
+}
