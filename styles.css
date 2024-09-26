@@ -369,6 +369,7 @@ a {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr) 30px;
   margin-top: 30px;
+  gap: 10px;
 }
 
 /*Alexandre*/
