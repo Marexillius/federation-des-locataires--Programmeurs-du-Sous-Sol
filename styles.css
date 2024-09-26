@@ -381,9 +381,33 @@ a {
   font-size: 10px;
 }
 
-.nouvelles .nouvelles__grid-container {
+.nouvelles {
+  width: 100%;
+}
+.nouvelles__grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.nouvelles__Item {
+  background-color: #D9D9D9;
+}
+.nouvelles__img {
+  text-align: center;
+  background-size: contain;
+  width: 100%;
+  border: 1px solid #1A1423;
+}
+.nouvelles__titreCarte {
+  text-align: center;
+}
+.nouvelles__paraCarte {
+  text-align: center;
+}
+.nouvelles__filtrer {
+  background-color: #1C5D99;
+  color: #fff;
+  padding: 15px;
 }
 
 * {
