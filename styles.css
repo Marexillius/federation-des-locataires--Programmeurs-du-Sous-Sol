@@ -365,6 +365,10 @@ a {
   }
 }
 /*Alexandre*/
+.membre {
+  display: flex;
+  justify-content: center;
+}
 .membre_container {
   display: flex;
   justify-content: center;
@@ -372,13 +376,18 @@ a {
   flex-direction: column;
   border: solid 3px #1A1423;
   font-family: "Metrophobic";
-  padding: 0 4%;
+  padding: 4%;
+  width: 90%;
 }
-.membre_container .membre__titre {
+.membre__titre {
   font-size: 12px;
 }
-.membre_container .membre__description {
+.membre__description {
   font-size: 10px;
+}
+.membre__bouton {
+  font-size: 12px;
+  padding: 1%;
 }
 
 .nouvelles .nouvelles__grid-container {
