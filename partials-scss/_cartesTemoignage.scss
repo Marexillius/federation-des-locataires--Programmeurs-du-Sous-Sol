@@ -1,12 +1,13 @@
 @use "variables";
 /*Alexandre*/
 .temoignages {
-    grid-area: 4/2/5/7;
     display: flex;
     justify-content: center;
     &__container {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 30px;
         width: 100%;
         font-family: variables.$FontText;
         color: variables.$white;
@@ -17,14 +18,35 @@
     }
     &__carte {
         background-color: variables.$lapisLazuli;
+        width: 100%;
+        display: grid;
+        padding: 2%;
     }
     &__image {
-
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     &__nom {
-        font-size: variables.$mobileFontSizeTitle;;
+        font-size: variables.$mobileFontSizeTitle;
+        grid-area: nom;
     }
     &__description {
         font-size: variables.$mobileFontSizeText;
+        grid-area: description;
+    }
+}
+
+#temoignagesImage {
+    @for $i from 1 through 3 {
+        &#{$i} {
+            grid-area: image#{$i};
+            background-image: url(../assets/img/test.webp);
+        }
+        #temoignages__carte#{$i} {
+            grid-template-areas: 
+            "image#{$i} nom nom"
+            "image#{$i} description description"
+            "image#{$i} description description";
+        }
     }
 }

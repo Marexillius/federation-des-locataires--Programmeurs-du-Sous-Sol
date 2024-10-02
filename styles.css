@@ -459,16 +459,16 @@ a {
   }
 }
 .body {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr) 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 5%;
   margin-top: 30px;
-  gap: 10px;
 }
 
 /*Alexandre*/
 .membre {
-  grid-area: 5/2/6/7;
   display: flex;
   justify-content: center;
 }
@@ -543,13 +543,14 @@ a {
 
 /*Alexandre*/
 .temoignages {
-  grid-area: 4/2/5/7;
   display: flex;
   justify-content: center;
 }
 .temoignages__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 30px;
   width: 100%;
   font-family: "Metrophobic";
   color: #fff;
@@ -560,12 +561,43 @@ a {
 }
 .temoignages__carte {
   background-color: #1C5D99;
+  width: 100%;
+  display: grid;
+  padding: 2%;
+}
+.temoignages__image {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .temoignages__nom {
   font-size: 12px;
+  grid-area: nom;
 }
 .temoignages__description {
   font-size: 10px;
+  grid-area: description;
+}
+
+#temoignagesImage1 {
+  grid-area: image1;
+  background-image: url(../assets/img/test.webp);
+}
+#temoignagesImage #temoignages__carte1 {
+  grid-template-areas: "image1 nom nom" "image1 description description" "image1 description description";
+}
+#temoignagesImage2 {
+  grid-area: image2;
+  background-image: url(../assets/img/test.webp);
+}
+#temoignagesImage #temoignages__carte2 {
+  grid-template-areas: "image2 nom nom" "image2 description description" "image2 description description";
+}
+#temoignagesImage3 {
+  grid-area: image3;
+  background-image: url(../assets/img/test.webp);
+}
+#temoignagesImage #temoignages__carte3 {
+  grid-template-areas: "image3 nom nom" "image3 description description" "image3 description description";
 }
 
 * {
