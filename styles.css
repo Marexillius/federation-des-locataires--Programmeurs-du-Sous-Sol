@@ -261,7 +261,6 @@ a {
     font-size: 12px;
   }
   .nouvelles {
-    grid-area: 1/2/2/7;
     width: 100%;
   }
   .nouvelles__boxtitre {
@@ -282,7 +281,7 @@ a {
   .nouvelles__grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
     gap: 20px;
     background-color: #C7C7C7;
     padding: 20px;
@@ -348,7 +347,7 @@ a {
   .navbar {
     display: grid;
     grid-template-areas: "logo logo logo search search search" "title title title search search search" "links links links links links links";
-    margin: 0 10vw;
+    margin: 0;
     gap: 10px;
   }
   .navbar__titre {
@@ -411,7 +410,6 @@ a {
     font-size: 24px;
   }
   .nouvelles {
-    grid-area: 1/2/2/7;
     width: 100%;
   }
   .nouvelles__boxtitre {
@@ -432,7 +430,7 @@ a {
   .nouvelles__grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
     gap: 20px;
     background-color: #C7C7C7;
     padding: 20px;
@@ -495,7 +493,6 @@ a {
 }
 
 .nouvelles {
-  grid-area: 1/2/2/7;
   width: 100%;
 }
 .nouvelles__boxtitre {
@@ -515,7 +512,7 @@ a {
 }
 .nouvelles__grid-container {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
   gap: 20px;
   background-color: #C7C7C7;
   padding: 20px;
@@ -603,4 +600,10 @@ a {
 * {
   margin: 0;
   padding: 0;
+}
+
+/*fix navbar*/
+.navbar-expand-md {
+  flex-wrap: wrap;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
