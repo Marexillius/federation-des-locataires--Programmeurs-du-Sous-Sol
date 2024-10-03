@@ -1,9 +1,7 @@
 @use "variables";
 
-
 // tablette
 @media screen and (min-width: 768px) {
-
     //font sizes for all the site
     a, p, button {
         font-size: variables.$tabletFontSizeText; 
@@ -183,6 +181,20 @@
             }
     }
     // Alexandre
+    .services {
+        &__titre {
+            font-size: variables.$tabletFontSizeTitle;
+        }
+        &__container {
+            column-gap: 20px;
+        }
+        &__carte {
+            grid-template-rows: 8fr 1fr 1fr;
+            row-gap: 10px;
+            font-size: variables.$tabletFontSizeText;
+        }
+    }
+    // Alexandre
     .footer {
         grid-template-areas: 
         "pages coordonnees plus"
@@ -354,6 +366,8 @@
             &__Item {
                 background-color: variables.$platinum;
                 height: 100%;
+                display: flex;
+                flex-direction: column;
             }
             &__img {
                 text-align: center;
@@ -361,13 +375,16 @@
                 width: 100%;
                 border: 1px solid variables.$raisinBlack;
                 height: 60%;
+                grid-area: image;
             }
             &__titreCarte{
                 text-align: center;
                 padding-top: 10px;
+                grid-area: titre;
             }
             &__paraCarte{
                 text-align: center;
+                grid-area: content;
             }
             &__filtrer {
                 background-color: variables.$lapisLazuli;
@@ -375,6 +392,18 @@
                 padding: 15px;
             }
     }
-    
+    .services {
+        &__titre {
+            font-size: variables.$ordiFontSizeTitle;
+        }
+        &__container {
+            column-gap: 30px;
+        }
+        &__carte {
+            grid-template-rows: 8fr 1fr 1fr;
+            row-gap: 10px;
+            font-size: variables.$ordiFontSizeText;
+        }
+    }
     
 }
