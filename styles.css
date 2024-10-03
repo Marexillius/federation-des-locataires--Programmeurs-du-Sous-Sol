@@ -804,7 +804,7 @@ a {
          column-gap: 30px;
   }
   .services__carte {
-    grid-template-rows: 8fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
     row-gap: 10px;
     font-size: 24px;
   }
