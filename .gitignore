@@ -1,5 +1,5 @@
 wp-admin/
-git rm wp-includes/
+wp-includes/
 *.php
 license.txt
 readme.html
