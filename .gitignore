@@ -1,5 +1,5 @@
-git rm --cached wp-admin/
-git rm --cached wp-includes/
-git rm --cached *.php
-git rm --cached license.txt
-git rm --cached readme.html
+git rm wp-admin/
+git rm wp-includes/
+git rm *.php
+git rm license.txt
+git rm readme.html
