@@ -11,9 +11,6 @@ OriginalSiteButton.addEventListener("click", function() {
     window.open("https://www.flhlmq.com/fr", "_blank");
 })
 
-hero2.addEventListener("click", function() {
-    this.style.left = "100%"
-});
 
 const hero = document.querySelector(".hero");
 const heros = document.querySelectorAll(".hero__nouvelles");
