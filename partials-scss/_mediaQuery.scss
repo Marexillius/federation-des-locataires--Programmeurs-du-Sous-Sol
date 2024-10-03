@@ -180,10 +180,6 @@
                 padding: 15px;
             }
     }
-
-    .hero {
-        max-height: 500px;
-    }
     // Alexandre
     .services {
         &__titre {
@@ -399,6 +395,7 @@
                 padding: 15px;
             }
     }
+
     .services {
         &__titre {
             font-size: variables.$ordiFontSizeTitle;
