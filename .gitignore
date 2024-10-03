@@ -1,18 +1,5 @@
-wp-admin/
-wp-includes/
-index.php
-license.txt
-readme.html
-wp-activate.php
-wp-blog-header.php
-wp-comments-posts.php
-wp-config-sample.php
-wp-cron.php
-wp-links-opml.php
-wp-load.php
-wp-login.php
-wp-mail.php
-wp-settings.php
-wp-signup.php
-wp-trackback.php
-xmlrpc.php
+git rm wp-admin/
+git rm wp-includes/
+git rm *.php
+git rm license.txt
+git rm readme.html
