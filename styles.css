@@ -552,6 +552,48 @@ a {
   padding: 15px;
 }
 
+.services {
+  width: 100%;
+  height: 120%;
+}
+.services__titre {
+  font-size: 12px;
+  font-family: "Metrophobic";
+}
+.services__container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  font-size: 10px;
+  font-family: "Metrophobic";
+  color: #fff;
+  text-align: center;
+}
+.services__carte {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8fr 1fr 2fr;
+  background-color: #1C5D99;
+  border: solid 5px #1A1423;
+  row-gap: 15px;
+}
+.services__images {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services #service1 {
+  background-image: url("../sources/medias/Ass. chateauguay.jpg");
+}
+.services #service2 {
+  background-image: url("../sources/medias/Ass. chateauguay.jpg");
+}
+.services #service3 {
+  background-image: url("../sources/medias/Ass. chateauguay.jpg");
+}
+
 .temoignages {
   display: flex;
   justify-content: center;

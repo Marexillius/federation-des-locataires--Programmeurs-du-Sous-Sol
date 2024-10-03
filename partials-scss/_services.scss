@@ -1,0 +1,42 @@
+@use "variables";
+// Alexandre
+.services {
+    width: 100%;
+    height: 120%;
+    &__titre {
+        font-size: variables.$mobileFontSizeTitle;
+        font-family: variables.$FontText;
+    }
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 30px;
+        font-size: variables.$mobileFontSizeText;
+        font-family: variables.$FontText;
+        color: variables.$white;
+        text-align: center;
+    }
+    &__carte {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr 1fr 2fr;
+        background-color: variables.$lapisLazuli;
+        border: solid 5px variables.$raisinBlack;
+        row-gap: 15px;
+    }
+    &__images {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #service1 {
+        background-image: url("../sources/medias/Ass.\ chateauguay.jpg");
+    }
+    #service2 {
+        background-image: url("../sources/medias/Ass.\ chateauguay.jpg");
+    }
+    #service3 {
+        background-image: url("../sources/medias/Ass.\ chateauguay.jpg");
+    }
+}

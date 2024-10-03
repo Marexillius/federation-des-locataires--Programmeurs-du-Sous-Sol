@@ -1,9 +1,7 @@
 @use "variables";
 
-
 // tablette
 @media screen and (min-width: 768px) {
-
     //font sizes for all the site
     a, p, button {
         font-size: variables.$tabletFontSizeText; 
