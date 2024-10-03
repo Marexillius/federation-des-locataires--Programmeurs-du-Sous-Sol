@@ -294,6 +294,7 @@ a {
     background-size: contain;
     width: 100%;
     border: 1px solid #1A1423;
+    height: 50%;
   }
   .nouvelles__titreCarte {
     text-align: center;
@@ -437,15 +438,18 @@ a {
   }
   .nouvelles__Item {
     background-color: #D9D9D9;
+    height: 100%;
   }
   .nouvelles__img {
     text-align: center;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     border: 1px solid #1A1423;
+    height: 60%;
   }
   .nouvelles__titreCarte {
     text-align: center;
+    padding-top: 10px;
   }
   .nouvelles__paraCarte {
     text-align: center;
@@ -522,9 +526,10 @@ a {
 }
 .nouvelles__img {
   text-align: center;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   border: 1px solid #1A1423;
+  height: 60%;
 }
 .nouvelles__titreCarte {
   text-align: center;
