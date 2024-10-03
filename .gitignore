@@ -1,5 +1,14 @@
+# remove wp-admin
 wp-admin/
+
+# remove wp-includes
 wp-includes/
+
+# remove all php files
 *.php
+
+# remove license
 license.txt
+
+# remove readme
 readme.html
