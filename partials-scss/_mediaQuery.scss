@@ -181,6 +181,16 @@
                 padding: 15px;
             }
     }
+    // Alexandre
+    .footer {
+        grid-template-areas: 
+        "pages coordonnees plus"
+        "pages coordonnees plus"
+        "pages coordonnees plus"
+        "pages coordonnees plus"
+        "copyright copyright copyright";
+        row-gap: 50px;
+    }
     
 } 
 
