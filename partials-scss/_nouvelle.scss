@@ -4,6 +4,8 @@
 .nouvelles {
     
     width: 100%;
+    max-width: 1400px; //jay
+    margin: 0 auto; //jay
         &__boxtitre{
             display: flex;
             justify-content: space-between;

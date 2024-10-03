@@ -1,8 +1,9 @@
 @use "variables";
 // Alexandre
 .services {
-    margin-top: 10vh;
+    margin: 10vh auto 0 auto; //jay-ish
     width: 100%;
+    max-width: 1400px;
     height: 120%;
     &__titre {
         font-size: variables.$mobileFontSizeTitle;

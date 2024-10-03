@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 1400px; //jay
+    margin: 0 auto; //jay
     &__container {
         display: grid;
         grid-template-columns:  1fr 1fr 1fr ;

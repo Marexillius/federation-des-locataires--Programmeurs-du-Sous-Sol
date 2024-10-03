@@ -162,16 +162,10 @@ a {
   border: none;
 }
 
-.body {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0 5%;
-}
-
 /*Alexandre*/
 .membre {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -199,6 +193,8 @@ a {
 
 .nouvelles {
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .nouvelles__boxtitre {
   display: flex;
@@ -308,7 +304,7 @@ a {
   max-height: 300px;
   overflow: hidden;
   border: 1px solid #1A1423;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .hero__nouvelles {
   width: 100%;
@@ -345,8 +341,9 @@ a {
 }
 
 .services {
-  margin-top: 10vh;
+  margin: 10vh auto 0 auto;
   width: 100%;
+  max-width: 1400px;
   height: 120%;
 }
 .services__titre {
@@ -399,6 +396,8 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   /*
   &__carte--01{
       grid-column-start:2; 
@@ -458,6 +457,14 @@ a {
 .temoignages__description {
   font-size: 10px;
   grid-area: description;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 5%;
 }
 
 @media screen and (min-width: 768px) {
