@@ -463,6 +463,8 @@ a {
   .nouvelles__Item {
     background-color: #D9D9D9;
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .nouvelles__img {
     text-align: center;
@@ -470,13 +472,16 @@ a {
     width: 100%;
     border: 1px solid #1A1423;
     height: 60%;
+    grid-area: image;
   }
   .nouvelles__titreCarte {
     text-align: center;
     padding-top: 10px;
+    grid-area: titre;
   }
   .nouvelles__paraCarte {
     text-align: center;
+    grid-area: content;
   }
   .nouvelles__filtrer {
     background-color: #1C5D99;
@@ -581,45 +586,102 @@ a {
   padding: 15px;
 }
 
+/* Good luck
+.nouvelles {
+    width: 100%;
+        &__boxtitre{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__titre{
+            display: inline-block;
+            align-self: self-end;
+            margin: 0;
+        }
+        &__lien{
+            display: inline-block;
+            color: variables.$steelBlue;
+            text-decoration: none;
+            align-self: self-end;
+
+        }
+        &__grid-container{
+            display: grid;
+            grid-template-rows: repeat(auto-fill, 1fr);
+            gap: 20px;
+            background-color:variables.$silver;
+            padding: 20px;
+
+        }
+        &__Item {
+            background-color: variables.$platinum;
+            display: grid;
+            grid-template-areas: 
+            "image image titre titre"
+            "image image content content ";
+        }
+        &__img {
+            text-align: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            border: 1px solid variables.$raisinBlack;
+            grid-area: image;
+        }
+        &__titreCarte{
+            text-align: center;
+            grid-area: titre;
+        }
+        &__paraCarte{
+            text-align: center;
+            grid-area: content;
+        }
+        &__filtrer {
+            background-color: variables.$lapisLazuli;
+            color:variables.$white;
+            padding: 15px;
+        }
+}
+*/
 .hero {
   width: 100%;
   height: 200px;
   overflow: hidden;
   border: 1px solid #1A1423;
-  position: relative;
   margin: 20px 0;
 }
 .hero__nouvelles {
-  position: absolute;
   width: 100%;
 }
 .hero__nouvelles--1 {
   width: 100%;
   height: 100%;
-  left: 100%;
+  transform: translate(0, 0);
   background-image: url(../sources/medias/2017\ -\ normandeae.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 .hero__nouvelles--2 {
   width: 100%;
   height: 100%;
+  transform: translate(100%, -103%);
   background-image: url(../sources/medias/1995\ manif\ animaux.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition-duration: 2s;
-  transition-timing-function: ease;
+  display: inline-block;
 }
 .hero__nouvelles--3 {
   width: 100%;
   height: 100%;
-  right: 100%;
+  transform: translate(-100%, -206%);
   background-image: url(../sources/medias/alxis\ jdq.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .services {
@@ -672,18 +734,33 @@ a {
   background-image: url("../sources/medias/Ass. chateauguay.jpg");
 }
 
+/*Alexandre*/
 .temoignages {
   display: flex;
   justify-content: center;
+  width: 100%;
+  /*
+  &__carte--01{
+      grid-column-start:2; 
+      grid-column-end: 3;
+  }
+  &__carte--02{
+      grid-column-start:3; 
+      grid-column-end: 4;
+  }
+  &__carte--03{
+      grid-column-start:4; 
+      grid-column-end: 5;
+  }*/
 }
 .temoignages__container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
   width: 100%;
   font-family: "Metrophobic";
   color: #fff;
+  text-align: center;
 }
 .temoignages__titre {
   font-size: 12px;
@@ -692,12 +769,27 @@ a {
 .temoignages__carte {
   background-color: #1C5D99;
   width: 100%;
-  display: grid;
-  padding: 2%;
+  padding: 2%; /*
+&--01{
+    grid-column-start:2; 
+    grid-column-end: 3;
+}
+&--02{
+    grid-column-start:3; 
+    grid-column-end: 4;
+}
+&--03{
+    grid-column-start:4; 
+    grid-column-end: 5;
+}*/
 }
 .temoignages__image {
-  background-size: cover;
+  width: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 10%;
 }
 .temoignages__nom {
   font-size: 12px;
@@ -706,28 +798,6 @@ a {
 .temoignages__description {
   font-size: 10px;
   grid-area: description;
-}
-
-#temoignagesImage1 {
-  grid-area: image1;
-  background-image: url(../assets/img/test.webp);
-}
-#temoignagesImage #temoignages__carte1 {
-  grid-template-areas: "image1 nom nom" "image1 description description" "image1 description description";
-}
-#temoignagesImage2 {
-  grid-area: image2;
-  background-image: url(../assets/img/test.webp);
-}
-#temoignagesImage #temoignages__carte2 {
-  grid-template-areas: "image2 nom nom" "image2 description description" "image2 description description";
-}
-#temoignagesImage3 {
-  grid-area: image3;
-  background-image: url(../assets/img/test.webp);
-}
-#temoignagesImage #temoignages__carte3 {
-  grid-template-areas: "image3 nom nom" "image3 description description" "image3 description description";
 }
 
 * {
