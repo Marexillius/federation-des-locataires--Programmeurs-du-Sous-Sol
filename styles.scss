@@ -10,11 +10,10 @@
 @use "partials-scss/cartesTemoignage";
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
 
 /*fix navbar*/
 .navbar-expand-md {
