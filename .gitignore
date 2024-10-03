@@ -1,5 +1,5 @@
-git rm wp-admin/
+wp-admin/
 git rm wp-includes/
-git rm *.php
-git rm license.txt
-git rm readme.html
+*.php
+license.txt
+readme.html
