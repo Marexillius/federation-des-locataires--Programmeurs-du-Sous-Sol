@@ -1,11 +1,8 @@
 @use "variables";
 
-
-.nouvelles {
-    
+/*
+.nouvelles { 
     width: 100%;
-    max-width: 1400px; //jay
-    margin: 0 auto; //jay
         &__boxtitre{
             display: flex;
             justify-content: space-between;
@@ -52,8 +49,8 @@
             color:variables.$white;
             padding: 15px;
         }
-}
-/* Good luck
+}*/
+//Good luck
 .nouvelles {
     width: 100%;
         &__boxtitre{
@@ -109,4 +106,3 @@
             padding: 15px;
         }
 }
-*/
