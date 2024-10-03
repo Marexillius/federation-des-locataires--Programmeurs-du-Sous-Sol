@@ -181,6 +181,20 @@
             }
     }
     // Alexandre
+    .services {
+        &__titre {
+            font-size: variables.$tabletFontSizeTitle;
+        }
+        &__container {
+            column-gap: 20px;
+        }
+        &__carte {
+            grid-template-rows: 8fr 1fr 1fr;
+            row-gap: 10px;
+            font-size: variables.$tabletFontSizeText;
+        }
+    }
+    // Alexandre
     .footer {
         grid-template-areas: 
         "pages coordonnees plus"
@@ -373,6 +387,18 @@
                 padding: 15px;
             }
     }
-    
+    .services {
+        &__titre {
+            font-size: variables.$ordiFontSizeTitle;
+        }
+        &__container {
+            column-gap: 30px;
+        }
+        &__carte {
+            grid-template-rows: 8fr 1fr 1fr;
+            row-gap: 10px;
+            font-size: variables.$ordiFontSizeText;
+        }
+    }
     
 }

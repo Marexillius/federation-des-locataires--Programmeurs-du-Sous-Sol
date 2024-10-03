@@ -12,7 +12,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        column-gap: 30px;
+        column-gap: 10px;
         font-size: variables.$mobileFontSizeText;
         font-family: variables.$FontText;
         color: variables.$white;
@@ -21,10 +21,10 @@
     &__carte {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 8fr 1fr 2fr;
+        grid-template-rows: 4fr 1fr 1fr;
         background-color: variables.$lapisLazuli;
         border: solid 5px variables.$raisinBlack;
-        row-gap: 15px;
+        row-gap: 5px;
     }
     &__images {
         background-repeat: no-repeat;

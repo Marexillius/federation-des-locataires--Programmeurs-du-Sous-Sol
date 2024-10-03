@@ -312,6 +312,18 @@ a {
     color: #fff;
     padding: 15px;
   }
+  .services__titre {
+    font-size: 36px;
+  }
+  .services__container {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .services__carte {
+    grid-template-rows: 8fr 1fr 1fr;
+    row-gap: 10px;
+    font-size: 12px;
+  }
   .footer {
     grid-template-areas: "pages coordonnees plus" "pages coordonnees plus" "pages coordonnees plus" "pages coordonnees plus" "copyright copyright copyright";
     row-gap: 50px;
@@ -468,6 +480,18 @@ a {
     color: #fff;
     padding: 15px;
   }
+  .services__titre {
+    font-size: 40px;
+  }
+  .services__container {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .services__carte {
+    grid-template-rows: 8fr 1fr 1fr;
+    row-gap: 10px;
+    font-size: 24px;
+  }
 }
 .body {
   display: flex;
@@ -605,8 +629,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   font-size: 10px;
   font-family: "Metrophobic";
   color: #fff;
@@ -615,10 +639,10 @@ a {
 .services__carte {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8fr 1fr 2fr;
+  grid-template-rows: 4fr 1fr 1fr;
   background-color: #1C5D99;
   border: solid 5px #1A1423;
-  row-gap: 15px;
+  row-gap: 5px;
 }
 .services__images {
   background-repeat: no-repeat;
