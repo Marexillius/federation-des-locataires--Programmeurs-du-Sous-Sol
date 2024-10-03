@@ -5,24 +5,38 @@
 // ################################
 .footer {
     background-color: variables.$lapisLazuli;
+    width: 100%;
     display: grid;
     color: variables.$white;
     font-family: variables.$FontText;
     font-size: variables.$mobileFontSizeText;
-    grid-template-rows: 7fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "pages"
+        "pages"
+        "pages"
+        "coordonnees"
+        "coordonnees"
+        "coordonnees"
+        "plus"
+        "plus"
+        "plus"
+        "copyright";
     column-gap: 20px;
+    row-gap: 25px;
     text-align: center;
-    padding: 2% 0;
+    padding: 5%;
     &__pages {
         display: grid;
         row-gap: 25px;
+        grid-area: pages;
     }
     &__coordonnees {
         display: grid;
+        grid-area: coordonnees;
     }
     &__plus {
         display: grid;
+        grid-area: plus;
     }
     &__item {
         color: variables.$white;
@@ -44,5 +58,6 @@
     &__copyright {
         grid-column: 1 / 5;
         font-size: variables.$mobileFontSizeCopyright;
+        grid-area: copyright;
     }
 }

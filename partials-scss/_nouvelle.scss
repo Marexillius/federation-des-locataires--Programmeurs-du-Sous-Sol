@@ -34,9 +34,10 @@
         }
         &__img {
             text-align: center;
-            background-size: contain;
+            background-size: cover;
             width: 100%;
             border: 1px solid variables.$raisinBlack;
+            height: 60%;
         }
         &__titreCarte{
             text-align: center;
