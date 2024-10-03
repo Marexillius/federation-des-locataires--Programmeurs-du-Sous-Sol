@@ -1,16 +1,17 @@
 @use "variables";
-// Alexandre
+/*Alexandre*/
 .temoignages {
     display: flex;
     justify-content: center;
+    width: 100%;
     &__container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 30px;
+        grid-template-columns:  1fr 1fr 1fr ;
+        gap: 10px;
         width: 100%;
         font-family: variables.$FontText;
         color: variables.$white;
+        text-align: center;
     }
     &__titre {
         font-size: variables.$mobileFontSizeTitle;
@@ -19,12 +20,27 @@
     &__carte {
         background-color: variables.$lapisLazuli;
         width: 100%;
-        display: grid;
-        padding: 2%;
+        padding: 2%;/*
+        &--01{
+            grid-column-start:2; 
+            grid-column-end: 3;
+        }
+        &--02{
+            grid-column-start:3; 
+            grid-column-end: 4;
+        }
+        &--03{
+            grid-column-start:4; 
+            grid-column-end: 5;
+        }*/
     }
     &__image {
-        background-size: cover;
+        width: 100%;
+        background-size: contain;
         background-repeat: no-repeat;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        margin-bottom: 10%;
     }
     &__nom {
         font-size: variables.$mobileFontSizeTitle;
@@ -33,20 +49,19 @@
     &__description {
         font-size: variables.$mobileFontSizeText;
         grid-area: description;
+    }/*
+    &__carte--01{
+        grid-column-start:2; 
+        grid-column-end: 3;
     }
+    &__carte--02{
+        grid-column-start:3; 
+        grid-column-end: 4;
+    }
+    &__carte--03{
+        grid-column-start:4; 
+        grid-column-end: 5;
+    }*/
 }
 
-#temoignagesImage {
-    @for $i from 1 through 3 {
-        &#{$i} {
-            grid-area: image#{$i};
-            background-image: url(../assets/img/test.webp);
-        }
-        #temoignages__carte#{$i} {
-            grid-template-areas: 
-            "image#{$i} nom nom"
-            "image#{$i} description description"
-            "image#{$i} description description";
-        }
-    }
-}
+
