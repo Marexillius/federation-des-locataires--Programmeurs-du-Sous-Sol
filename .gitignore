@@ -12,3 +12,6 @@ license.txt
 
 # remove readme
 readme.html
+
+# remove htaccess
+.htaccess
