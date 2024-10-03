@@ -475,7 +475,6 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 0 5%;
-  margin-top: 30px;
 }
 
 /*Alexandre*/
@@ -550,6 +549,47 @@ a {
   background-color: #1C5D99;
   color: #fff;
   padding: 15px;
+}
+
+.hero {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #1A1423;
+  position: relative;
+  margin: 20px 0;
+}
+.hero__nouvelles {
+  position: absolute;
+  width: 100%;
+}
+.hero__nouvelles--1 {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  background-image: url(../sources/medias/2017\ -\ normandeae.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__nouvelles--2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../sources/medias/1995\ manif\ animaux.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.hero__nouvelles--3 {
+  width: 100%;
+  height: 100%;
+  right: 100%;
+  background-image: url(../sources/medias/alxis\ jdq.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .services {
@@ -653,6 +693,7 @@ a {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
