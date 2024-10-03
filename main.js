@@ -10,3 +10,9 @@ closePopUp.addEventListener("click", function() {
 OriginalSiteButton.addEventListener("click", function() {
     window.open("https://www.flhlmq.com/fr", "_blank");
 })
+
+const hero2 = document.querySelector(".hero__nouvelles--2");
+
+hero2.addEventListener("click", function() {
+    this.style.left = "100%"
+})
