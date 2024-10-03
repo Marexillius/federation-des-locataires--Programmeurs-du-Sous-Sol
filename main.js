@@ -11,6 +11,9 @@ OriginalSiteButton.addEventListener("click", function() {
     window.open("https://www.flhlmq.com/fr", "_blank");
 })
 
+hero2.addEventListener("click", function() {
+    this.style.left = "100%"
+});
 
 const hero = document.querySelector(".hero");
 const heros = document.querySelectorAll(".hero__nouvelles");
@@ -53,5 +56,20 @@ for (let index = 0; index < heros.length; index++) {
  
     })  
 }
-//.style.transitionDuration = "1s";
-//.style.transitionTimingFunction = "linear";
+
+// #####################################
+//    S E R V I C E S   O F F E R T S
+// #####################################
+// Alexandre
+const servicesCard = document.querySelectorAll(".services__carte");
+
+servicesCard.forEach(card => {
+    card.addEventListener("click", function() {
+        servicesCard.forEach(element => {
+            if (element.classList.contains("services__carte--active")) {
+                element.classList.remove("services__carte--active");
+            } 
+        });
+        card.classList.add("services__carte--active");
+    })
+});
