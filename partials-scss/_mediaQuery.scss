@@ -192,6 +192,9 @@
             grid-template-rows: 8fr 1fr 1fr;
             row-gap: 10px;
             font-size: variables.$tabletFontSizeText;
+            &--active {
+                transform: scale(1.1);
+            }
         }
     }
     // Alexandre
@@ -398,6 +401,9 @@
             grid-template-rows: 8fr 1fr 1fr;
             row-gap: 10px;
             font-size: variables.$ordiFontSizeText;
+            &--active {
+                transform: scale(1.05);
+            }
         }
     }
     

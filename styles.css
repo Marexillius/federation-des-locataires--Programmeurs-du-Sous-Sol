@@ -324,6 +324,9 @@ a {
     row-gap: 10px;
     font-size: 12px;
   }
+  .services__carte--active {
+    transform: scale(1.1);
+  }
   .footer {
     grid-template-areas: "pages coordonnees plus" "pages coordonnees plus" "pages coordonnees plus" "pages coordonnees plus" "copyright copyright copyright";
     row-gap: 50px;
@@ -492,6 +495,9 @@ a {
     row-gap: 10px;
     font-size: 24px;
   }
+  .services__carte--active {
+    transform: scale(1.05);
+  }
 }
 .body {
   display: flex;
@@ -617,6 +623,7 @@ a {
 }
 
 .services {
+  margin-top: 10vh;
   width: 100%;
   height: 120%;
 }
@@ -639,10 +646,17 @@ a {
 .services__carte {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
   background-color: #1C5D99;
   border: solid 5px #1A1423;
   row-gap: 5px;
+  transform: scale(1);
+  transform-origin: 50% 125%;
+  transition: 1s;
+}
+.services__carte--active {
+  transform: scale(1.2);
+  z-index: 1;
 }
 .services__images {
   background-repeat: no-repeat;

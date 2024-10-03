@@ -1,6 +1,7 @@
 @use "variables";
 // Alexandre
 .services {
+    margin-top: 10vh;
     width: 100%;
     height: 120%;
     &__titre {
@@ -21,10 +22,17 @@
     &__carte {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 4fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
         background-color: variables.$lapisLazuli;
         border: solid 5px variables.$raisinBlack;
         row-gap: 5px;
+        transform: scale(1);
+        transform-origin: 50% 125%;
+        transition: 1s;
+        &--active {
+            transform: scale(1.2);
+            z-index: 1;
+        }
     }
     &__images {
         background-repeat: no-repeat;
