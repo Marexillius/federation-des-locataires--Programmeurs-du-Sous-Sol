@@ -11,7 +11,7 @@ OriginalSiteButton.addEventListener("click", function() {
     window.open("https://www.flhlmq.com/fr", "_blank");
 })
 
-const swiper = new Swiper('.swiper', {
+const swiperHero = new Swiper('.hero__swipper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -29,21 +29,25 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  });
+});
+
+const swiperService = new Swiper('.service__swipper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    autoplay: {
+        delay: 3000,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
 
 // #####################################
 //    S E R V I C E S   O F F E R T S
 // #####################################
 // Alexandre
-const servicesCard = document.querySelectorAll(".services__carte");
-
-servicesCard.forEach(card => {
-    card.addEventListener("click", function() {
-        servicesCard.forEach(element => {
-            if (element.classList.contains("services__carte--active")) {
-                element.classList.remove("services__carte--active");
-            } 
-        });
-        card.classList.add("services__carte--active");
-    })
-});

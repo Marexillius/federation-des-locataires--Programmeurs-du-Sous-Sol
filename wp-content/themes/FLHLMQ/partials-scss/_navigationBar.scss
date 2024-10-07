@@ -47,8 +47,16 @@ a {
   height: 50%;
   width: 40vw;
   background-color: #5ca3e6;
+  color: variables.$raisinBlack;
+  font-weight: 500;
   border: none;
+
+    &::placeholder {
+      color: variables.$raisinBlack;
+      font-weight: 500;
+    }
   }
+
 
   &__button {
       grid-area: search;

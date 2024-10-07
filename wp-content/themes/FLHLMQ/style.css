@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Impact";
-  src: url(../assets/fonts/impact.ttf) format("truetype");
+  src: url(./sources/assets/fonts/impact.ttf) format("truetype");
 }
 @font-face {
   font-family: "Metrophobic";
-  src: url(../assets/fonts/Metrophobic-Regular.ttf) format("truetype");
+  src: url(./sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
 }
 .footer {
   background-color: #1C5D99;
@@ -93,7 +93,17 @@ a {
   height: 50%;
   width: 40vw;
   background-color: #5ca3e6;
+  color: #1A1423;
+  font-weight: 500;
   border: none;
+}
+.navbar__search::-moz-placeholder {
+  color: #1A1423;
+  font-weight: 500;
+}
+.navbar__search::placeholder {
+  color: #1A1423;
+  font-weight: 500;
 }
 .navbar__button {
   grid-area: search;
@@ -540,7 +550,6 @@ a {
     height: 30px;
     background-color: #5180AB;
     border: none;
-    color: white;
   }
   .navbar__burger {
     grid-area: menu;
@@ -562,6 +571,9 @@ a {
   .navbar__joindre {
     display: block;
     font-size: 12px;
+  }
+  .hero {
+    max-height: 404px;
   }
   .nouvelles {
     width: 100%;
@@ -709,7 +721,6 @@ a {
     height: 30px;
     background-color: #5180AB;
     border: none;
-    color: white;
   }
   .navbar__burger {
     grid-area: menu;
@@ -731,6 +742,9 @@ a {
   .navbar__joindre {
     display: block;
     font-size: 24px;
+  }
+  .hero {
+    max-height: 565px;
   }
   .nouvelles {
     width: 100%;
