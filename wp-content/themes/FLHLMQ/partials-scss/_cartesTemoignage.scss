@@ -1,5 +1,9 @@
 @use "variables";
 /*Alexandre*/
+.temoignages__titre {
+    font-size: variables.$mobileFontSizeTitle;
+    color: variables.$raisinBlack;
+}
 .temoignages {
     display: flex;
     justify-content: center;

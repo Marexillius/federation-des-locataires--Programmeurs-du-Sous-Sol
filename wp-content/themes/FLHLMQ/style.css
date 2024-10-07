@@ -397,6 +397,11 @@ a {
 }
 
 /*Alexandre*/
+.temoignages__titre {
+  font-size: 12px;
+  color: #1A1423;
+}
+
 .temoignages {
   display: flex;
   justify-content: center;
@@ -473,6 +478,10 @@ a {
 @media screen and (min-width: 768px) {
   a, p, button {
     font-size: 12px;
+  }
+  .temoignages__titre {
+    font-size: 12px;
+    color: #1A1423;
   }
   .projet {
     display: grid;
@@ -645,6 +654,10 @@ a {
 @media screen and (min-width: 1400px) {
   a, p, button {
     font-size: 24px;
+  }
+  .temoignages__titre {
+    font-size: 40px;
+    color: #1A1423;
   }
   .projet {
     display: grid;
