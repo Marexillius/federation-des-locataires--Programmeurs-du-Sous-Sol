@@ -35,10 +35,7 @@ const swiperService = new Swiper('.service__swipper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
-    autoplay: {
-        delay: 3000,
-    },
+    effect: "cards",
   
     // Navigation arrows
     navigation: {

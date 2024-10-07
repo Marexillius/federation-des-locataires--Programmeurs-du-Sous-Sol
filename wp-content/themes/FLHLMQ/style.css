@@ -374,13 +374,6 @@ a {
   background-color: #1C5D99;
   border: solid 5px #1A1423;
   row-gap: 5px;
-  transform: scale(1);
-  transform-origin: 50% 125%;
-  transition: 1s;
-}
-.services__carte--active {
-  transform: scale(1.2);
-  z-index: 1;
 }
 .services__images {
   background-repeat: no-repeat;
