@@ -7,6 +7,10 @@
         font-size: variables.$tabletFontSizeText; 
     }
 
+    .temoignages__titre {
+        font-size: variables.$tabletFontSizeText; 
+        color: variables.$raisinBlack;
+    }
 
     .projet {
         display: grid;
@@ -220,6 +224,11 @@
     //font sizes for all the site
     a, p, button {
         font-size: variables.$ordiFontSizeText; 
+    }
+
+    .temoignages__titre {
+        font-size: variables.$ordiFontSizeTitle;
+        color: variables.$raisinBlack;
     }
 
     .projet {
