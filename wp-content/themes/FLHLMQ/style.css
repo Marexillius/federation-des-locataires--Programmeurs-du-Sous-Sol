@@ -460,28 +460,6 @@ a {
   grid-area: description;
 }
 
-.savior {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.savior__image {
-  width: 100%;
-}
-.savior__date {
-  margin: 10px 0;
-}
-.savior__cat {
-  border: 1px solid #1A1423;
-  border-radius: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 3px;
-  background-color: rgba(218, 111, 111, 0.5);
-  align-self: self-start;
-}
-
 hr {
   color: #1A1423;
   border: solid 2px #1A1423;
@@ -542,6 +520,45 @@ hr {
 }
 .card__member__description a {
   font-size: 12px;
+}
+
+.contenu {
+  margin-top: 2%;
+}
+.contenu__tableau {
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid black;
+}
+.contenu__tableau__item {
+  border: 1px solid black;
+  padding: 2%;
+  gap: 0;
+  margin: 0;
+}
+.contenu__tableau2 {
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid black;
+}
+.contenu__tableau2__item {
+  border: 1px solid black;
+  padding: 2%;
+  gap: 0;
+  margin: 0;
+}
+.contenu__image {
+  width: 100%;
+}
+
+hr {
+  color: black;
+  border: 2px solid black;
 }
 
 @media screen and (min-width: 768px) {
@@ -944,17 +961,6 @@ hr {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Metrophobic";
-}
-
-.body {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0 5%;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 body {
@@ -965,4 +971,11 @@ body {
 .navbar-expand-md {
   flex-wrap: wrap;
   justify-content: center;
+}
+
+a {
+  color: #5180AB;
+}
+a:hover {
+  color: #C7C7C7;
 }/*# sourceMappingURL=style.css.map */
