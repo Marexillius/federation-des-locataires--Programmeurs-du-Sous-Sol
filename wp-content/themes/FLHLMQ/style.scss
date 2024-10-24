@@ -8,28 +8,16 @@
 @use "partials-scss/services";
 @use "partials-scss/cartesTemoignage";
 
-@use "partials-scss/pageNouvelle";
 @use "partials-scss/team";
 @use "partials-scss/uniqueService";
 
-
-@use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get overwritten
+@use "partials-scss/about";
+@use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get over written
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Metrophobic";
-}
-
-.body {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0 5%;
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 body {
@@ -40,4 +28,12 @@ body {
 .navbar-expand-md {
     flex-wrap: wrap; 
     justify-content: center; 
+}
+
+a {
+    color: variables.$steelBlue;
+
+    &:hover {
+        color: variables.$silver;
+    }
 }
