@@ -482,14 +482,6 @@ a {
   align-self: self-start;
 }
 
-.body {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0 5%;
-}
-
 @media screen and (min-width: 768px) {
   a, p, button {
     font-size: 12px;
@@ -851,13 +843,28 @@ a {
   font-family: "Metrophobic";
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /*fix navbar*/
 .navbar-expand-md {
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.body {
-  max-width: 1400px;
-  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
