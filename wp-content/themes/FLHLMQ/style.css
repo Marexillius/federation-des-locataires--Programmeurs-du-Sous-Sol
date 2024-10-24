@@ -460,50 +460,98 @@ a {
   grid-area: description;
 }
 
-.savior {
-  width: 100%;
+.team {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  padding: 3%;
+  font-family: "Metrophobic";
 }
-.savior__image {
-  width: 100%;
+.team__title {
+  font-size: 12px;
 }
-.savior__date {
-  margin: 10px 0;
-}
-.savior__cat {
-  border: 1px solid #1A1423;
-  border-radius: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 3px;
-  align-self: self-start;
+.team__members {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 150vh;
 }
 
-.nextNews {
-  position: relative;
-  width: 100%;
-  max-height: 300px;
-  overflow: hidden;
+.card__member {
+  border: solid 2px #1A1423;
+  border-radius: 10px;
+  height: 24%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-bottom: 2%;
 }
-.nextNews__fade {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, white 85%);
+.card__member__image {
+  height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card__member__image--robert {
+  background-image: url("../../../sources/medias/robertPilon.jpg");
+}
+.card__member__image--elisabeth {
+  background-image: url("../../../sources/medias/elisabethPham.jpg");
+  background-position: 0% 50%;
+}
+.card__member__image--patricia {
+  background-image: url("../../../sources/medias/patriciaViannay.jpg");
+  background-position: 0% 20%;
+}
+.card__member__image--anik {
+  background-image: url("../../../sources/medias/anikLeroux.jpg");
+  background-position: 0% 20%;
+}
+.card__member__description {
+  padding: 3%;
   text-align: center;
+  font-size: 12px;
+}
+.card__member__description a {
+  font-size: 12px;
 }
 
-#manif {
-  background-color: rgba(218, 111, 111, 0.5);
+.contenu {
+  margin-top: 2%;
+}
+.contenu__tableau {
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid black;
+}
+.contenu__tableau__item {
+  border: 1px solid black;
+  padding: 2%;
+  gap: 0;
+  margin: 0;
+}
+.contenu__tableau2 {
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid black;
+}
+.contenu__tableau2__item {
+  border: 1px solid black;
+  padding: 2%;
+  gap: 0;
+  margin: 0;
+}
+.contenu__image {
+  width: 100%;
 }
 
-#HLM {
-  background-color: rgba(111, 218, 195, 0.5);
+hr {
+  color: black;
+  border: 2px solid black;
 }
 
 @media screen and (min-width: 768px) {
@@ -661,6 +709,35 @@ a {
     background-color: #1C5D99;
     color: #fff;
     padding: 15px;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3%;
+    margin-bottom: 0;
+    font-family: "Metrophobic";
+  }
+  .team__title {
+    font-size: 36px;
+  }
+  .team__members {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+  }
+  .card__member {
+    width: 48%;
+    height: 48%;
+    margin-right: 2%;
+  }
+  .card__member__description {
+    font-size: 12px;
+  }
+  .card__member__description a {
+    font-size: 12px;
   }
   .services__titre {
     font-size: 36px;
@@ -844,6 +921,18 @@ a {
     color: #fff;
     padding: 15px;
   }
+  .team {
+    font-family: "Metrophobic";
+  }
+  .team__title {
+    font-size: 40px;
+  }
+  .card__member__description {
+    font-size: 24px;
+  }
+  .card__member__description a {
+    font-size: 24px;
+  }
   .services__titre {
     font-size: 40px;
   }
@@ -864,17 +953,6 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Metrophobic";
-}
-
-.body {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0 5%;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .body {
