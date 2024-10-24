@@ -1,12 +1,14 @@
 @use "partials-scss/variables";
 @use "partials-scss/footer";
 @use "partials-scss/navigationBar";
+
 @use "partials-scss/membre";
 @use "partials-scss/nouvelle";
 @use "partials-scss/hero";
 @use "partials-scss/services";
 @use "partials-scss/cartesTemoignage";
 @use "partials-scss/team";
+@use "partials-scss/uniqueService";
 @use "partials-scss/pageNouvelle";
 @use "partials-scss/about";
 
@@ -18,14 +20,8 @@
     padding: 0;
 }
 
-.body {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0 5%;
-    max-width: 1400px;
-    margin: 0 auto;
+body {
+    overflow-x: hidden;
 }
 
 /*fix navbar*/
