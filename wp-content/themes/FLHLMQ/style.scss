@@ -1,16 +1,15 @@
 @use "partials-scss/variables";
 @use "partials-scss/footer";
 @use "partials-scss/navigationBar";
-
 @use "partials-scss/membre";
 @use "partials-scss/nouvelle";
 @use "partials-scss/hero";
 @use "partials-scss/services";
 @use "partials-scss/cartesTemoignage";
-
 @use "partials-scss/team";
-
+@use "partials-scss/pageNouvelle";
 @use "partials-scss/about";
+
 @use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get over written
 
 *{
