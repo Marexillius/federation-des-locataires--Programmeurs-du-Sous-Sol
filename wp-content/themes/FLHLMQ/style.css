@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Impact";
-  src: url(./sources/assets/fonts/impact.ttf) format("truetype");
+  src: url(../../../sources/assets/fonts/impact.ttf) format("truetype");
 }
 @font-face {
   font-family: "Metrophobic";
-  src: url(./sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
+  src: url(../../../sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
 }
 .footer {
   background-color: #1C5D99;
@@ -458,6 +458,58 @@ a {
 .temoignages__description {
   font-size: 10px;
   grid-area: description;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3%;
+  font-family: "Metrophobic";
+}
+.team__title {
+  font-size: 12px;
+}
+.team__members {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 150vh;
+}
+
+.card__member {
+  border: solid 2px #1A1423;
+  border-radius: 10px;
+  height: 24%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+.card__member__image {
+  height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card__member__image--robert {
+  background-image: url("../../../sources/medias/robertPilon.jpg");
+}
+.card__member__image--elisabeth {
+  background-image: url("../../../sources/medias/elisabethPham.jpg");
+  background-position: 0% 50%;
+}
+.card__member__image--patricia {
+  background-image: url("../../../sources/medias/patriciaViannay.jpg");
+}
+.card__member__image--anik {
+  background-image: url("../../../sources/medias/anikLeroux.jpg");
+}
+.card__member__description {
+  padding: 3%;
+  font-size: 10px;
+}
+.card__member__description a {
+  font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {

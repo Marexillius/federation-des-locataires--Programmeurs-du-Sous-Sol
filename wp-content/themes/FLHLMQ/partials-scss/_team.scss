@@ -1,0 +1,53 @@
+@use "variables";
+
+.team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3%;
+    font-family: variables.$FontText;
+    &__title {
+        font-size: variables.$mobileFontSizeTitle;
+    }
+    &__members {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 150vh;
+    }
+}
+
+.card__member {
+    border: solid 2px variables.$raisinBlack;
+    border-radius: 10px;
+    height: 24%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 2%;
+    &__image {
+        height: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &--robert {
+            background-image: url("../../../sources/medias/robertPilon.jpg");
+        }
+        &--elisabeth {
+            background-image: url("../../../sources/medias/elisabethPham.jpg");
+            background-position: 0% 50%;
+        }
+        &--patricia {
+            background-image: url("../../../sources/medias/patriciaViannay.jpg");
+        }
+        &--anik {
+            background-image: url("../../../sources/medias/anikLeroux.jpg");
+        }
+    }
+    &__description {
+        padding: 3%;
+        font-size: variables.$mobileFontSizeText;
+        a {
+            font-size: variables.$mobileFontSizeText;
+        }
+    }
+}
