@@ -46,3 +46,11 @@
     flex-wrap: wrap; 
     justify-content: center; 
 }
+
+a {
+    color: variables.$steelBlue;
+
+    &:hover {
+        color: variables.$silver;
+    }
+}
