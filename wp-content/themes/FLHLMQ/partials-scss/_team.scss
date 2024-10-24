@@ -1,6 +1,12 @@
 @use "variables";
 
 // Alexandre
+hr {
+    color: variables.$raisinBlack;
+    border: solid 2px variables.$raisinBlack;
+    width: 100%;
+}
+
 .team {
     display: flex;
     flex-direction: column;
@@ -28,6 +34,7 @@
     margin-bottom: 2%;
     &__image {
         height: 70%;
+        border-radius: 10px 10px 0 0;
         background-size: cover;
         background-repeat: no-repeat;
         &--robert {

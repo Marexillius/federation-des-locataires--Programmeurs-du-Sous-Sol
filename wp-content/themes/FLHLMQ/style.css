@@ -482,6 +482,12 @@ a {
   align-self: self-start;
 }
 
+hr {
+  color: #1A1423;
+  border: solid 2px #1A1423;
+  width: 100%;
+}
+
 .team {
   display: flex;
   flex-direction: column;
@@ -510,6 +516,7 @@ a {
 }
 .card__member__image {
   height: 70%;
+  border-radius: 10px 10px 0 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -539,10 +546,10 @@ a {
 
 @media screen and (min-width: 768px) {
   a, p, button {
-    font-size: 12px;
+    font-size: 20px;
   }
   .temoignages__titre {
-    font-size: 12px;
+    font-size: 20px;
     color: #1A1423;
   }
   .projet {
@@ -554,14 +561,14 @@ a {
     text-align: left;
   }
   .projet__texte {
-    font-size: 12px;
+    font-size: 20px;
     margin: 10px 0;
     color: #fff;
     text-align: right;
     margin: auto 0;
   }
   .projet__OriginalSite {
-    font-size: 12px;
+    font-size: 20px;
     height: 36px;
     margin: 10px 0;
     width: 50%;
@@ -572,7 +579,7 @@ a {
   .projet__ClosePopUp {
     background-color: #1C5D99;
     color: #fff;
-    font-size: 12px;
+    font-size: 20px;
     height: 36px;
     margin: 10px 0;
     width: 20%;
@@ -593,7 +600,7 @@ a {
     max-width: 70%;
     max-height: 200px;
     text-align: left;
-    font-size: 12px;
+    font-size: 20px;
   }
   .navbar__links {
     grid-area: search;
@@ -612,7 +619,7 @@ a {
     border: 3px solid #fff;
     display: block;
     color: #1A1423;
-    font-size: 12px;
+    font-size: 20px;
     border-radius: 5px;
   }
   .navbar__search {
@@ -632,16 +639,16 @@ a {
   }
   .navbar__accueil, .navbar__nouvelles, .navbar__services, .navbar__equipes, .navbar__FAQ, .navbar__propos {
     color: #fff;
-    font-size: 12px;
+    font-size: 20px;
     font-family: "Metrophobic";
   }
   .navbar__english {
     display: block;
-    font-size: 12px;
+    font-size: 20px;
   }
   .navbar__joindre {
     display: block;
-    font-size: 12px;
+    font-size: 20px;
   }
   .hero {
     max-height: 404px;
@@ -708,19 +715,20 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     height: 100vh;
     width: 100%;
   }
   .card__member {
     width: 48%;
     height: 48%;
-    margin-right: 2%;
   }
   .card__member__description {
-    font-size: 12px;
+    font-size: 20px;
   }
   .card__member__description a {
-    font-size: 12px;
+    font-size: 20px;
   }
   .services__titre {
     font-size: 36px;
@@ -732,7 +740,7 @@ a {
   .services__carte {
     grid-template-rows: 8fr 1fr 1fr;
     row-gap: 10px;
-    font-size: 12px;
+    font-size: 20px;
   }
   .services__carte--active {
     transform: scale(1.1);
@@ -949,14 +957,8 @@ a {
   margin: 0 auto;
 }
 
-.body {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0 5%;
-  max-width: 1400px;
-  margin: 0 auto;
+body {
+  overflow-x: hidden;
 }
 
 /*fix navbar*/

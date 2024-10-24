@@ -10,6 +10,7 @@
 
 @use "partials-scss/pageNouvelle";
 @use "partials-scss/team";
+@use "partials-scss/uniqueService";
 
 
 @use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get overwritten
@@ -31,14 +32,8 @@
     margin: 0 auto;
 }
 
-.body {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0 5%;
-    max-width: 1400px;
-    margin: 0 auto;
+body {
+    overflow-x: hidden;
 }
 
 /*fix navbar*/
