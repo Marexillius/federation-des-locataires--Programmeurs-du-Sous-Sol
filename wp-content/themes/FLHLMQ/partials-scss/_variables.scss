@@ -12,12 +12,12 @@ $rgbAlpha: rgba($color: #000000, $alpha: -1.0);
 //jay
 @font-face {
     font-family: "Impact";
-    src: url(./sources/assets/fonts/impact.ttf) format("truetype");
+    src: url(../../../sources/assets/fonts/impact.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Metrophobic";
-    src: url(./sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
+    src: url(../../../sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
 }
 
 $mobileFontSizeTitle : 12px;
