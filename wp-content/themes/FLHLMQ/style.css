@@ -969,4 +969,11 @@ hr {
 .navbar-expand-md {
   flex-wrap: wrap;
   justify-content: center;
+}
+
+a {
+  color: #5180AB;
+}
+a:hover {
+  color: #C7C7C7;
 }/*# sourceMappingURL=style.css.map */
