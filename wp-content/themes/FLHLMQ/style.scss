@@ -8,16 +8,17 @@
 @use "partials-scss/services";
 @use "partials-scss/cartesTemoignage";
 
-
+@use "partials-scss/pageNouvelle";
 @use "partials-scss/accueil";
 
 
-@use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get over written
+@use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get overwritten
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Metrophobic";
 }
 
 /*fix navbar*/

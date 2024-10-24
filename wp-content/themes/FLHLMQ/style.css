@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Impact";
-  src: url(./sources/assets/fonts/impact.ttf) format("truetype");
+  src: url(../../../sources/assets/fonts/impact.ttf) format("truetype");
 }
 @font-face {
   font-family: "Metrophobic";
-  src: url(./sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
+  src: url(../../../sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
 }
 .footer {
   background-color: #1C5D99;
@@ -460,6 +460,28 @@ a {
   grid-area: description;
 }
 
+.savior {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.savior__image {
+  width: 100%;
+}
+.savior__date {
+  margin: 10px 0;
+}
+.savior__cat {
+  border: 1px solid #1A1423;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px;
+  background-color: rgba(218, 111, 111, 0.5);
+  align-self: self-start;
+}
+
 .body {
   display: flex;
   justify-content: center;
@@ -826,6 +848,7 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Metrophobic";
 }
 
 /*fix navbar*/
