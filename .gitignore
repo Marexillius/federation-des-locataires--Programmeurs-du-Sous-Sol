@@ -1,3 +1,6 @@
+# remove css map
+wp-content/themes/FLHLMQ/style.map.css
+
 # remove wp-admin
 wp-admin/
 
