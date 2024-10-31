@@ -1009,8 +1009,14 @@ hr {
   padding: 0;
 }
 
-body {
-  overflow-x: hidden;
+.body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 5%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /*fix navbar*/
