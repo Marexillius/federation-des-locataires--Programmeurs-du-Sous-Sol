@@ -701,6 +701,17 @@ hr {
   background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, white 85%);
   text-align: center;
 }
+.nextNews__link {
+  position: absolute;
+  top: 50%;
+  transform: rotateZ(90deg) scale(2) scaleY(1.5);
+  text-decoration: none;
+  color: #1A1423;
+  animation-name: upAndDown;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 
 #manif {
   background-color: rgba(218, 111, 111, 0.5);
@@ -710,6 +721,17 @@ hr {
   background-color: rgba(111, 218, 195, 0.5);
 }
 
+@keyframes upAndDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 55%;
+  }
+  100% {
+    top: 50%;
+  }
+}
 .contenu {
   margin-top: 2%;
 }
