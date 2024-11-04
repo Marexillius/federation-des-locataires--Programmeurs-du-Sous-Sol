@@ -42,6 +42,18 @@
         text-align: center;
 
     }
+
+    &__link {
+        position: absolute;
+        top: 50%;
+        transform: rotateZ(90deg) scale(2) scaleY(1.5);
+        text-decoration: none;
+        color: variables.$raisinBlack;
+        animation-name: upAndDown;
+        animation-timing-function:ease-in-out;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 }
 
 #manif {
@@ -50,4 +62,10 @@
 
 #HLM {
     background-color: rgba(#6fdac3, 0.5);
+}
+
+@keyframes upAndDown {
+    0% {top: 50%;}
+    50% {top: 55%;}
+    100% {top: 50%;}
 }
