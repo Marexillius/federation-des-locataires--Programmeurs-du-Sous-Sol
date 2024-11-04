@@ -188,6 +188,57 @@
                 padding: 15px;
             }
     }
+//Ian
+    .serviceHub {
+        width: 100%;
+            &__boxtitre{
+                display: flex;
+                justify-content: space-between;
+            }
+            &__titre{
+                display: inline-block;
+                align-self: self-end;
+                margin: 0;
+            }
+            &__lien{
+                display: inline-block;
+                color: variables.$steelBlue;
+                text-decoration: none;
+                align-self: self-end;
+                
+            }
+            &__grid-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(auto-fill, 1fr);
+                gap: 20px;
+                background-color:variables.$silver;
+                padding: 20px;
+                
+            }
+            &__Item {
+                background-color: variables.$platinum;
+        
+            }
+            &__img {
+                text-align: center;
+                background-size: contain;
+                width: 100%;
+                border: 1px solid variables.$raisinBlack;
+                height: 50%;
+            }
+            &__titreCarte{
+                text-align: center;
+            }
+            &__paraCarte{
+                text-align: center;
+            }
+            &__filtrer {
+                background-color: variables.$lapisLazuli;
+                color:variables.$white;
+                padding: 15px;
+            }
+    }
     // Alexandre
     .team {
         display: flex;
@@ -410,6 +461,64 @@
             &__grid-container{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat(auto-fill, 1fr);
+                gap: 20px;
+                background-color:variables.$silver;
+                padding: 20px;
+                
+            }
+            &__Item {
+                background-color: variables.$platinum;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            &__img {
+                text-align: center;
+                background-size: cover;
+                width: 100%;
+                border: 1px solid variables.$raisinBlack;
+                height: 60%;
+                grid-area: image;
+            }
+            &__titreCarte{
+                text-align: center;
+                padding-top: 10px;
+                grid-area: titre;
+            }
+            &__paraCarte{
+                text-align: center;
+                grid-area: content;
+            }
+            &__filtrer {
+                background-color: variables.$lapisLazuli;
+                color:variables.$white;
+                padding: 15px;
+            }
+    }
+    //Ian
+    .serviceHub {
+       
+        width: 100%;
+            &__boxtitre{
+                display: flex;
+                justify-content: space-between;
+            }
+            &__titre{
+                display: inline-block;
+                align-self: self-end;
+                margin: 0;
+            }
+            &__lien{
+                display: inline-block;
+                color: variables.$steelBlue;
+                text-decoration: none;
+                align-self: self-end;
+                
+            }
+            &__grid-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(auto-fill, 1fr);
                 gap: 20px;
                 background-color:variables.$silver;
