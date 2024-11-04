@@ -53,54 +53,83 @@
 //Good luck
 .nouvelles {
     width: 100%;
-        &__boxtitre{
-            display: flex;
-            justify-content: space-between;
+    margin: 20px 0;
+
+    &__boxtitre{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__titre{
+        display: inline-block;
+        align-self: self-end;
+        margin: 0 0 10px 0;
+    }
+
+    &__lien{
+        display: inline-block;
+        color: variables.$steelBlue;
+        text-decoration: none;
+        align-self: self-end;
+        
+    }
+
+    &__grid-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 20px;
+        background-color:variables.$silver;
+        padding: 20px;
+        
+    }
+
+    &__Item {
+        background-color: variables.$platinum;
+        height: fit-content;
+    }
+
+    &__img {
+        text-align: center;
+        background-size: contain;
+        width: 100%;
+        border: 1px solid variables.$raisinBlack;
+        height: 200px;
+        object-fit:cover;
+        object-position: top;
+    }
+
+    &__titreCarte{
+        text-align: center;
+    }
+
+    &__paraCarte{
+        text-align: center;
+    }
+
+    &__filtrer {
+        background-color: variables.$lapisLazuli;
+        color:variables.$white;
+        padding: 15px;
+    }
+
+    &__more {
+        width: 60%;
+        justify-self: center;
+        text-align: center;
+        padding: 10px;
+        background-color: variables.$platinum;
+        border: 1px solid variables.$raisinBlack;
+        transition-duration: 1s;
+
+        &:hover {
+            background-color: variables.$raisinBlack;
+            color: variables.$white;
         }
-        &__titre{
-            display: inline-block;
-            align-self: self-end;
-            margin: 0;
-        }
-        &__lien{
-            display: inline-block;
-            color: variables.$steelBlue;
-            text-decoration: none;
-            align-self: self-end;
-            
-        }
-        &__grid-container{
-            display: grid;
-            grid-template-columns: 1fr ;
-            grid-template-rows: repeat(auto-fill, 1fr);
-            gap: 20px;
-            background-color:variables.$silver;
-            padding: 20px;
-            
-        }
-        &__Item {
-            background-color: variables.$platinum;
-    
-        }
-        &__img {
-            text-align: center;
-            background-size: contain;
-            width: 100%;
-            border: 1px solid variables.$raisinBlack;
-            height: 50%;
-        }
-        &__titreCarte{
-            text-align: center;
-        }
-        &__paraCarte{
-            text-align: center;
-        }
-        &__filtrer {
-            background-color: variables.$lapisLazuli;
-            color:variables.$white;
-            padding: 15px;
-        }
-}/*
+    }
+}
+
+/*
 .nouvelles {
     width: 100%;
         &__boxtitre{

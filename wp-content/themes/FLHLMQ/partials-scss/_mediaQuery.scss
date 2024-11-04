@@ -25,8 +25,8 @@
             font-size: variables.$tabletFontSizeText;
             margin: 10px 0;
             color: variables.$white;
-            text-align: right;
             margin: auto 0;
+            align-self: center;
         }
 
         &__OriginalSite {
@@ -147,7 +147,6 @@
             &__titre{
                 display: inline-block;
                 align-self: self-end;
-                margin: 0;
             }
             &__lien{
                 display: inline-block;
@@ -167,14 +166,15 @@
             }
             &__Item {
                 background-color: variables.$platinum;
-        
+                height: 100%;        
             }
             &__img {
                 text-align: center;
                 background-size: contain;
                 width: 100%;
                 border: 1px solid variables.$raisinBlack;
-                height: 50%;
+                height: 300px;
+                object-fit: cover;
             }
             &__titreCarte{
                 text-align: center;
@@ -449,7 +449,6 @@
             &__titre{
                 display: inline-block;
                 align-self: self-end;
-                margin: 0;
             }
             &__lien{
                 display: inline-block;
@@ -478,8 +477,9 @@
                 background-size: cover;
                 width: 100%;
                 border: 1px solid variables.$raisinBlack;
-                height: 60%;
+                height: 300px;
                 grid-area: image;
+                object-fit: cover;
             }
             &__titreCarte{
                 text-align: center;
