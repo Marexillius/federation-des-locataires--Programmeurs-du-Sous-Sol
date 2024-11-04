@@ -59,7 +59,7 @@
 header {
   background-color: #1C5D99;
   display: grid;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   grid-template-rows: auto auto;
 }
@@ -835,6 +835,9 @@ hr {
   align-self: self-end;
   margin: 0 0 10px 0;
 }
+.allNews__newspaper {
+  width: 50px;
+}
 .allNews__lien {
   display: inline-block;
   color: #5180AB;
@@ -864,10 +867,14 @@ hr {
   object-position: top;
 }
 .allNews__titreCarte {
-  text-align: center;
+  text-align: left;
+  padding: 10px 10px 0 10px;
 }
 .allNews__paraCarte {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0 10px 10px 10px;
+  line-height: 1;
 }
 .allNews__filtrer {
   background-color: #1C5D99;
