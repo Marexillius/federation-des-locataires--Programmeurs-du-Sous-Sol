@@ -11,6 +11,8 @@
 @use "partials-scss/uniqueService";
 @use "partials-scss/pageNouvelle";
 @use "partials-scss/about";
+@use "partials-scss/allNews";
+
 @use "partials-scss/error";
 
 @use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get over written
@@ -19,6 +21,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: variables.$FontText;
 }
 
 .body {

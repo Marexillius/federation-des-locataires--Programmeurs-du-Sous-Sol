@@ -63,7 +63,7 @@ a {
       margin:0 0 5px auto;
       padding: 0.5% 1.5%;
       border: 3px solid variables.$white;
-      display: block;
+      display: none;
       color: variables.$raisinBlack;
       font-size: variables.$mobileFontSizeText;
       border-radius: 5px;
@@ -113,6 +113,8 @@ a {
     margin: 10px 0;
     color: variables.$white;
     padding-left: 20px;
+    text-align: center;
+    align-self: center;
   }
 
   &__OriginalSite {
