@@ -31,6 +31,10 @@ const swiperHero = new Swiper('.hero__swipper', {
     },
 });
 
+// #####################################
+//    S E R V I C E S   O F F E R T S
+// #####################################
+// Alexandre
 const swiperService = new Swiper('.service__swipper', {
     // Optional parameters
     direction: 'horizontal',
@@ -45,6 +49,6 @@ const swiperService = new Swiper('.service__swipper', {
 });
 
 // #####################################
-//    S E R V I C E S   O F F E R T S
+//    P A G E   E R R E U R   4 0 4
 // #####################################
 // Alexandre

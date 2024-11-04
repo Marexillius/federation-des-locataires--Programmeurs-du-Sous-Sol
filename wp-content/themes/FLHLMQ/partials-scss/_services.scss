@@ -32,13 +32,17 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    &__nom, .services__texte {
+        padding: 1%;
+        color: variables.$white;
+    }
     #service1 {
-        background-image: url("../sources/medias/Ass.\ chateauguay.jpg");
+        background-image: url("../../../sources/medias/Ass.\ chateauguay.jpg");
     }
     #service2 {
-        background-image: url("../sources/medias/Ass.\ chateauguay.jpg");
+        background-image: url("../../../sources/medias/Ass.\ chateauguay.jpg");
     }
     #service3 {
-        background-image: url("../sources/medias/Ass.\ chateauguay.jpg");
+        background-image: url("../../../sources/medias/Ass.\ chateauguay.jpg");
     }
 }

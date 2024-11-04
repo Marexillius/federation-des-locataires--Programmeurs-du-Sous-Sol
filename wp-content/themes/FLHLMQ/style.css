@@ -542,14 +542,18 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.services__nom, .services .services__texte {
+  padding: 1%;
+  color: #fff;
+}
 .services #service1 {
-  background-image: url("../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
 }
 .services #service2 {
-  background-image: url("../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
 }
 .services #service3 {
-  background-image: url("../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
 }
 
 /*Alexandre*/
@@ -683,6 +687,33 @@ hr {
 }
 .card__member__description a {
   font-size: 20px;
+}
+
+.service__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.service__container__img {
+  width: 100%;
+}
+
+.nextService {
+  position: relative;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+.nextService__fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, white 85%);
+  text-align: center;
 }
 
 .savior {
