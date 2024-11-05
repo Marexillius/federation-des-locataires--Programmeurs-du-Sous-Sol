@@ -78,6 +78,7 @@ a {
   grid-template-areas: "menu menu logo logo" "title title search search" "title title search search";
   margin: 0 10px;
   gap: 5px;
+  padding: 20px;
 }
 .navbar__titre {
   grid-area: title;
@@ -153,8 +154,8 @@ a {
   font-size: 15px;
   margin: 10px 0;
   color: #fff;
-  padding-left: 20px;
-  text-align: center;
+  padding: 0 20px;
+  text-align: left;
   align-self: center;
 }
 .projet__OriginalSite {
@@ -929,21 +930,25 @@ hr {
   }
   .projet__ButtonContainer {
     text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .projet__texte {
     font-size: 20px;
-    margin: 10px 0;
     color: #fff;
-    margin: auto 0;
+    margin: 10px 0;
+    padding: 0 20px;
     align-self: center;
+    justify-self: end;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .projet__OriginalSite {
     font-size: 20px;
     height: 36px;
-    margin: 10px 0;
     width: 50%;
     max-width: 150px;
-    float: left;
     border: none;
   }
   .projet__ClosePopUp {
@@ -951,7 +956,7 @@ hr {
     color: #fff;
     font-size: 20px;
     height: 36px;
-    margin: 10px 0;
+    margin: 10% 0;
     width: 20%;
     max-width: 60px;
     border: none;
@@ -1188,6 +1193,7 @@ hr {
     font-size: 24px;
     margin: 10px 0;
     color: #fff;
+    text-align: right;
   }
   .projet__OriginalSite {
     font-size: 24px;
@@ -1432,6 +1438,7 @@ body {
   padding: 0 5%;
   max-width: 1400px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /*fix navbar*/

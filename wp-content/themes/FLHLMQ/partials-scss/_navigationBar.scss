@@ -27,6 +27,7 @@ a {
                         "title title search search";
   margin: 0 10px;
   gap: 5px;
+  padding: 20px;
 
   &__titre {
     grid-area: title;
@@ -112,8 +113,8 @@ a {
     font-size: variables.$mobileFontSizeText;
     margin: 10px 0;
     color: variables.$white;
-    padding-left: 20px;
-    text-align: center;
+    padding: 0 20px;
+    text-align: left;
     align-self: center;
   }
 

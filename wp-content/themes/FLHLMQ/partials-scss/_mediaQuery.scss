@@ -19,23 +19,26 @@
 
         &__ButtonContainer {
             text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
 
         &__texte {
             font-size: variables.$tabletFontSizeText;
-            margin: 10px 0;
             color: variables.$white;
-            margin: auto 0;
+            margin: 10px 0;
+            padding: 0 20px;
             align-self: center;
+            justify-self: end;
+            width: fit-content;
         }
 
         &__OriginalSite {
             font-size: variables.$tabletFontSizeText;
             height: 36px;
-            margin: 10px 0;
             width: 50%;
             max-width: 150px;
-            float: left;
             border:none;
         }
 
@@ -44,7 +47,7 @@
             color: variables.$white;
             font-size: variables.$tabletFontSizeText;
             height: 36px;
-            margin: 10px 0;
+            margin: 10% 0;
             width: 20%;
             max-width: 60px;
             border:none;
@@ -327,6 +330,7 @@
             font-size: variables.$ordiFontSizeText;
             margin: 10px 0;
             color: variables.$white;
+            text-align: right;
         }
 
         &__OriginalSite {
