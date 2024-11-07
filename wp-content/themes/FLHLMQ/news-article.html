@@ -68,18 +68,21 @@
 </header>
 
 <main class="body">
-    <article itemscope>
+    <article itemscope itemtype="https://schema.org/NewsArticle">
         <div class="linkInTime">
             <p class="linkInTime__ariane">Accueil / <a href="#">Nouvelles</a></p>
-            <p class="linkInTime__time">Par Rédaction - Jeu 22/08/2024</p>          
+            <div class="linkInTime__time" itemprop="author dateCreated">Par 
+                <p itemprop="author">Rédaction</p> - 
+                <p itemprop="author dateCreated">Jeu 22/08/2024</p>
+            </div>          
         </div>
 
         <div class="savior">
             <div class="savior__hero">
                 <div class="savior__icon">
-                  <img src="../../../sources/assets/img/upGraph_white.png" alt="">  
+                  <img src="../../../sources/assets/img/upGraph_white.png" itemprop="image">  
                 </div>
-                <h2 class="savior__title">Manifestation du 15 septembre à Québec</h2>
+                <h2 class="savior__title" itemprop="name contentLocation">Manifestation du 15 septembre à Québec</h2>
             </div>
             <img class="savior__image" src="../../../sources/medias/banniere.png" alt="">
         </div>
@@ -88,8 +91,8 @@
             <a href="">Nouvelles suivante&gt;&gt;</a>
         </div>
         <div class="content">
-            <p class="content__cat" id="manif">Manifestation</p>
-            <div class="content__text">
+            <p class="content__cat" id="manif" itemprop="genre">Manifestation</p>
+            <div class="content__text" itemprop="speakable">
                 <p class="content__para">
                     La crise du logement continue de sévir. Alors que les loyers ont
                     augmenté de façon vertigineuse dans les dernières années, alors que
