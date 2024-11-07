@@ -86,9 +86,16 @@
     }
 
     &__filtrer {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
         background-color: variables.$lapisLazuli;
         color:variables.$white;
         padding: 15px;
+
+        &__sort {
+            margin: 0 20px;
+        }
     }
 
     &__more {
