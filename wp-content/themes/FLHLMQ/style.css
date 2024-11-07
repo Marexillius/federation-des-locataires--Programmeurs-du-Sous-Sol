@@ -486,6 +486,7 @@ a {
 }
 .hero__swipper {
   height: 100%;
+  position: relative;
 }
 .hero__nouvelles {
   width: 100%;
@@ -512,12 +513,21 @@ a {
   width: 100%;
   height: 100%;
 }
+.hero__serviceHub {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1%;
+  background-color: rgba(99, 99, 99, 0.471);
+  color: white;
+}
 .hero__arrowRight, .hero__arrowLeft {
   color: #1A1423;
+  display: none;
 }
 
 .swiper-pagination-bullet-active {
-  background: #1A1423;
+  background: #fff;
 }
 
 .services {
@@ -1320,6 +1330,10 @@ hr {
   }
   .hero {
     max-height: 565px;
+  }
+  .hero__arrowRight, .hero__arrowLeft {
+    color: #1A1423;
+    display: block;
   }
   .nouvelles {
     width: 100%;
