@@ -47,8 +47,3 @@ const swiperService = new Swiper('.service__swipper', {
       prevEl: '.swiper-button-prev',
     },
 });
-
-// #####################################
-//    P A G E   E R R E U R   4 0 4
-// #####################################
-// Alexandre
