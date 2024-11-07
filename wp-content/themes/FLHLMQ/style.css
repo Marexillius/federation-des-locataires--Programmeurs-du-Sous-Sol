@@ -942,6 +942,7 @@ hr {
   width: 45%;
   margin: 10px 10px;
   transition-duration: 0.3s;
+  height: 500px;
 }
 .allNews__Item:hover {
   background-color: #fff;
