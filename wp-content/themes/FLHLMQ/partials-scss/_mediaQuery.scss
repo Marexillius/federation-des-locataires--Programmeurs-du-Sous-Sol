@@ -139,6 +139,7 @@
 
       .hero {
         max-height: 404px;
+
       }
 
      .nouvelles {
@@ -455,6 +456,10 @@
 
       .hero {
         max-height: 565px;
+        &__arrowRight, &__arrowLeft {
+            color: variables.$raisinBlack;
+            display: block;
+        }
       }
 
       .nouvelles {
