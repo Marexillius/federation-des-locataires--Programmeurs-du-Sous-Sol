@@ -1,0 +1,33 @@
+@use "variables";
+
+// Alexandre
+.error {
+    &__container {
+        margin-top: 2%;
+    }
+    &__title {
+        font-family: variables.$FontLogo;
+        font-size: variables.$mobileFontSizeTitle;
+    }
+    &__text {
+        font-family: variables.$FontText;
+        font-size: variables.$mobileFontSizeText;
+    }
+    &__animationGSAP {
+        width: 100%;
+        height: 25vh;
+        position: relative;
+        background-image: url("../../../sources/assets/img/error404BG.png");
+        background-size: contain;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
+    &__sign {
+        position: absolute;
+        transform-origin: 50% 100%;
+        width: 12%;
+        left: 63%;
+        top: 46%;
+        z-index: 2;
+    }
+}

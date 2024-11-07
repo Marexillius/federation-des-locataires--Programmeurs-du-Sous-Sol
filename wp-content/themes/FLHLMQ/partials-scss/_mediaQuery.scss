@@ -292,6 +292,20 @@
             }
         }
     }
+
+    // Alexandre
+    .error {
+        &__title {
+            font-size: variables.$tabletFontSizeTitle;
+        }
+        &__text {
+            font-size: variables.$tabletFontSizeText;
+        }
+        &__animationGSAP {
+            height: 45vh;
+        }
+    }
+
     // Alexandre
     .footer {
         grid-template-areas: 
@@ -557,6 +571,19 @@
                 color:variables.$white;
                 padding: 15px;
             }
+    }
+
+    // Alexandre
+    .error {
+        &__title {
+            font-size: variables.$ordiFontSizeTitle;
+        }
+        &__text {
+            font-size: variables.$ordiFontSizeText;
+        }
+        &__animationGSAP {
+            height: 60vh;
+        }
     }
 
     // Alexandre
