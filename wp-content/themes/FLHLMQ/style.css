@@ -1027,6 +1027,57 @@ hr {
   z-index: 2;
 }
 
+.contact {
+  margin: 20px 0;
+}
+.contact:nth-child(1n+1) {
+  height: 10%;
+  width: 100%;
+}
+.contact__text {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.contact__phone, .contact__telecopieur, .contact__poste, .contact__email {
+  display: flex;
+  align-items: center;
+}
+.contact__info {
+  margin-bottom: 8px;
+}
+
+.form h2 {
+  border-top: 2px solid #1A1423;
+}
+.form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0px;
+}
+.form__name {
+  width: 45%;
+}
+.form__mail {
+  width: 45%;
+}
+.form__message {
+  width: 100%;
+  height: 10vh;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.form__submit {
+  width: 40%;
+  height: 50px;
+}
+
 @media screen and (min-width: 768px) {
   a, p, button {
     font-size: 20px;
