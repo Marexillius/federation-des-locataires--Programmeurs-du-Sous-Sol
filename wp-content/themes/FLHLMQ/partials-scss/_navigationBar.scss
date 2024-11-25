@@ -51,6 +51,7 @@ a {
   color: variables.$raisinBlack;
   font-weight: 500;
   border: none;
+  border-radius: 2px;
 
     &::placeholder {
       color: variables.$raisinBlack;
