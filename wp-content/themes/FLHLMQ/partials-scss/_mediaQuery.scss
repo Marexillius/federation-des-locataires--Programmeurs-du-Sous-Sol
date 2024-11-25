@@ -318,6 +318,21 @@
         row-gap: 50px;
     }
     
+.allNews {
+    &__img {
+        height: calc(100px + 40%);
+    }
+    &__paraCarte{
+        display: block;
+    }
+    &__Item{
+        height: 520px;
+    }
+    
+    &__titreCarte{
+
+        font-size: variables.$tabletFontSizeTitle;
+    }
 } 
 
 // ordi
@@ -625,4 +640,5 @@
         }
     }
     
+}
 }
