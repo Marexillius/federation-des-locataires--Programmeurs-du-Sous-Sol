@@ -3,8 +3,15 @@ const BurgerButton = document.querySelector("#Burger");
 const OriginalSiteButton = document.querySelector("#OriginalSite");
 const closePopUp = document.querySelector("#ClosePopUp");
 
+let isClosed = localStorage.getItem("popupClosed");
+console.log(isClosed)
+if (isClosed) {
+  document.querySelector(".projet").style.display = "none";
+}
+
 closePopUp.addEventListener("click", function() {
     document.querySelector(".projet").style.display = "none";
+    localStorage.setItem("popupClosed", "true");
 })
 
 OriginalSiteButton.addEventListener("click", function() {

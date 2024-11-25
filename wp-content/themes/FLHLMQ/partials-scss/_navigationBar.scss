@@ -22,7 +22,7 @@ a {
 // Jay & Ian
 .navbar {
   display: grid;
-  grid-template-areas: "menu menu logo logo"
+  grid-template-areas: "menu menu menu logo"
                         "title title search search"
                         "title title search search";
   margin: 0 10px;
@@ -46,8 +46,8 @@ a {
 
   &__search {
   height: 50%;
-  width: 40vw;
-  background-color: #5ca3e6;
+  width: 100%;
+  background-color: variables.$steelBlue;
   color: variables.$raisinBlack;
   font-weight: 500;
   border: none;
@@ -60,14 +60,14 @@ a {
 
 
   &__button {
-      grid-area: search;
+      grid-area: button;
       margin:0 0 5px auto;
       padding: 0.5% 1.5%;
       border: 3px solid variables.$white;
-      display: none;
       color: variables.$raisinBlack;
       font-size: variables.$mobileFontSizeText;
       border-radius: 5px;
+      float: right;
   }
 
   &__logo {
@@ -76,6 +76,8 @@ a {
     font-size: variables.$mobileFontSizeLogo;
     color: variables.$white;
    text-align: right;
+   width: fit-content;
+   height: 100%;
   }
 
   &__burger {
