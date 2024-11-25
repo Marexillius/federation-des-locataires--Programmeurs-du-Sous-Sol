@@ -95,8 +95,12 @@ a {
   background-color: #5180AB;
   color: #1A1423;
   font-weight: 500;
-  border: none;
   border-radius: 2px;
+  border: none;
+}
+.navbar__search:focus {
+  outline: none;
+  border: 1px #1A1423 solid;
 }
 .navbar__search::placeholder {
   color: #1A1423;

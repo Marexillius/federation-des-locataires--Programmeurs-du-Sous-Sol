@@ -50,8 +50,13 @@ a {
   background-color: variables.$steelBlue;
   color: variables.$raisinBlack;
   font-weight: 500;
-  border: none;
   border-radius: 2px;
+  border: none;
+
+  &:focus {
+    outline: none;
+    border: 1px variables.$raisinBlack solid;
+  }
 
     &::placeholder {
       color: variables.$raisinBlack;
