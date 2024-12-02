@@ -716,6 +716,36 @@ hr {
   font-size: 20px;
 }
 
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.modal__hidden {
+  display: none;
+}
+.modal__member {
+  background-color: #1C5D99;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 5px 5px #1A1423;
+}
+.modal__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 60%;
+}
+.modal__text {
+  font-size: 15px;
+  font-family: "Metrophobic";
+}
+
 .service__container {
   width: 100%;
   display: flex;
@@ -1355,6 +1385,9 @@ hr {
   .services__carte--active {
     transform: scale(1.1);
   }
+  .modal__text {
+    font-size: 20px;
+  }
   .error__title {
     font-size: 36px;
   }
@@ -1616,6 +1649,9 @@ hr {
   }
   .team__title {
     font-size: 40px;
+  }
+  .modal__text {
+    font-size: 24px;
   }
   .card__member__description {
     font-size: 24px;

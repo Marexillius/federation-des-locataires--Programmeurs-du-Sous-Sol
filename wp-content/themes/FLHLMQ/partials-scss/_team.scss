@@ -62,3 +62,32 @@ hr {
         }
     }
 }
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    &__hidden {
+        display: none;
+    }
+    &__member {
+        background-color: variables.$lapisLazuli;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 10px 5px 5px variables.$raisinBlack;
+    }
+    &__image {
+        object-fit: contain;
+        width: 60%;
+    }
+    &__text {
+        font-size: variables.$mobileFontSizeText;
+        font-family: variables.$FontText;
+    }
+}

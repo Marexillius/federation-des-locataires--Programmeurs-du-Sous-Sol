@@ -294,6 +294,11 @@
     }
 
     // Alexandre
+    .modal__text {
+        font-size: variables.$tabletFontSizeText;
+    }
+
+    // Alexandre
     .error {
         &__title {
             font-size: variables.$tabletFontSizeTitle;
@@ -609,6 +614,11 @@
         &__title {
             font-size: variables.$ordiFontSizeTitle;
         }
+    }
+
+    // Alexandre
+    .modal__text {
+        font-size: variables.$ordiFontSizeText;
     }
     
     .card__member {
