@@ -31,18 +31,19 @@
     &__images {
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
     &__nom, .services__texte {
         padding: 1%;
         color: variables.$white;
     }
     #service1 {
-        background-image: url("../../../sources/medias/Ass.\ chateauguay.jpg");
+        background-image: url("../../../sources/medias/banniere.png");
     }
     #service2 {
-        background-image: url("../../../sources/medias/Ass.\ chateauguay.jpg");
+        background-image: url("../../../sources/medias/hlm saguenay.png");
     }
     #service3 {
-        background-image: url("../../../sources/medias/Ass.\ chateauguay.jpg");
+        background-image: url("../../../sources/medias/service1.jpg");
     }
 }
