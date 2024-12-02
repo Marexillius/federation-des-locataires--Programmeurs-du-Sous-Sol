@@ -14,8 +14,7 @@
   font-family: "Metrophobic";
   font-size: 15px;
   grid-template-areas: "pages" "pages" "pages" "coordonnees" "coordonnees" "coordonnees" "plus" "plus" "plus" "copyright";
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   row-gap: 25px;
   text-align: center;
   padding: 5%;
@@ -103,10 +102,6 @@ a {
   outline: none;
   border: 1px #1A1423 solid;
 }
-.navbar__search::-moz-placeholder {
-  color: #1A1423;
-  font-weight: 500;
-}
 .navbar__search::placeholder {
   color: #1A1423;
   font-weight: 500;
@@ -127,7 +122,6 @@ a {
   font-size: 32px;
   color: #fff;
   text-align: right;
-  width: -moz-fit-content;
   width: fit-content;
   height: 100%;
 }
@@ -388,7 +382,6 @@ a {
 }
 .nouvelles__Item {
   background-color: #D9D9D9;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .nouvelles__img {
@@ -397,16 +390,18 @@ a {
   width: 100%;
   border: 1px solid #1A1423;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 .nouvelles__titreCarte {
   text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .nouvelles__paraCarte {
   text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .nouvelles__filtrer {
   background-color: #1C5D99;
@@ -504,10 +499,8 @@ a {
 .hero__nouvelles img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 .hero__nouvelles--1 {
   width: 100%;
@@ -553,8 +546,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   font-size: 15px;
   font-family: "Metrophobic";
   color: #fff;
@@ -571,19 +563,20 @@ a {
 .services__images {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .services__nom, .services .services__texte {
   padding: 1%;
   color: #fff;
 }
 .services #service1 {
-  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/banniere.png");
 }
 .services #service2 {
-  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/hlm saguenay.png");
 }
 .services #service3 {
-  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/service1.jpg");
 }
 
 /*Alexandre*/
@@ -644,6 +637,9 @@ a {
   border-radius: 100%;
   aspect-ratio: 1/1;
   margin-bottom: 10%;
+}
+.temoignages__image--2 {
+  object-fit: cover;
 }
 .temoignages__nom {
   font-size: 20px;
@@ -806,10 +802,8 @@ hr {
 .savior__image {
   width: 100%;
   max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 35%;
-     object-position: 0 35%;
+  object-fit: cover;
+  object-position: 0 35%;
   border: 2px solid #1A1423;
 }
 .savior__date {
@@ -821,7 +815,6 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px 0 0 0;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .linkInTime__ariane a {
@@ -842,7 +835,6 @@ hr {
 .content__cat {
   border: 1px solid #1A1423;
   border-radius: 5px;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 3px;
   align-self: self-end;
@@ -1009,10 +1001,8 @@ hr {
   border: 1px solid #1A1423;
   height: calc(100px + 10%);
   max-height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 .allNews__titreCarte {
   text-align: left;
@@ -1089,15 +1079,19 @@ hr {
   width: 100%;
 }
 .contact__text {
-  margin-right: 10px;
+  margin: 0 10px 0 0;
   white-space: nowrap;
+}
+.contact__smalltalk {
+  margin: 20px 0;
 }
 .contact__phone, .contact__telecopieur, .contact__poste, .contact__email {
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 .contact__info {
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .form h2 {
@@ -1113,23 +1107,21 @@ hr {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 10px 0px;
+  margin: 20px 0;
 }
-.form__name {
-  width: 45%;
-}
-.form__mail {
+.form__name, .form__mail {
   width: 45%;
 }
 .form__message {
   width: 100%;
   height: 10vh;
   min-height: 100px;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 .form__submit {
   width: 40%;
   height: 50px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1158,7 +1150,6 @@ hr {
     padding: 0 20px;
     align-self: center;
     justify-self: end;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .projet__OriginalSite {
@@ -1279,8 +1270,7 @@ hr {
     width: 100%;
     border: 1px solid #1A1423;
     height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .nouvelles__titreCarte {
     text-align: center;
@@ -1374,8 +1364,7 @@ hr {
     font-size: 36px;
   }
   .services__container {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   .services__carte {
     grid-template-rows: 8fr 1fr 1fr;
@@ -1564,8 +1553,7 @@ hr {
     border: 1px solid #1A1423;
     height: 300px;
     grid-area: image;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .nouvelles__titreCarte {
     text-align: center;
@@ -1663,8 +1651,7 @@ hr {
     font-size: 40px;
   }
   .services__container {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
   .services__carte {
     grid-template-rows: 3fr 1fr 1fr;
