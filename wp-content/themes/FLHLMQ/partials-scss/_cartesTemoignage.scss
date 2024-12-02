@@ -44,7 +44,13 @@
         border-radius: 100%;
         aspect-ratio: 1/1;
         margin-bottom: 10%;
+       
+
+
     }
+        &__image--2{
+            object-fit: cover;
+        }
     &__nom {
         font-size: variables.$mobileFontSizeTitle;
         grid-area: nom;

@@ -395,9 +395,13 @@ a {
 }
 .nouvelles__titreCarte {
   text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .nouvelles__paraCarte {
   text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .nouvelles__filtrer {
   background-color: #1C5D99;
@@ -559,19 +563,20 @@ a {
 .services__images {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .services__nom, .services .services__texte {
   padding: 1%;
   color: #fff;
 }
 .services #service1 {
-  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/banniere.png");
 }
 .services #service2 {
-  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/hlm saguenay.png");
 }
 .services #service3 {
-  background-image: url("../../../sources/medias/Ass. chateauguay.jpg");
+  background-image: url("../../../sources/medias/service1.jpg");
 }
 
 /*Alexandre*/
@@ -632,6 +637,9 @@ a {
   border-radius: 100%;
   aspect-ratio: 1/1;
   margin-bottom: 10%;
+}
+.temoignages__image--2 {
+  object-fit: cover;
 }
 .temoignages__nom {
   font-size: 20px;
