@@ -46,7 +46,7 @@
     </div>
 
     <nav class="navbar navbar-dark navbar-expand-md">
-        <div class="container navbar__collapse">
+        <div class="container">
             
             
             <button class="navbar-toggler navbar__burger" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
@@ -55,10 +55,14 @@
            
             <!-- Hamburger button -->
             <!-- Navigation -->
-			 
+
 				<?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu','container_class' => 'collapse navbar-collapse', 'container_id' => 'mainNav' ,'menu_class' => 'navbar-nav d-flex w-100 justify-content-between','menu_id' => 'nav-menu', 'list_item_class' => 'nav-item navbar__FAQ', 'link_item_class' => 'nav-link' ) );
+			wp_nav_menu( array( 
+				'theme_location' => 'main-menu','container_class' => 'collapse navbar-collapse', 'container_id' => 'mainNav' ,
+				'menu_class' => 'navbar-nav d-flex w-100 justify-content-between',
+				'menu_id' => 'nav-menu', 
+				'list_item_class' => 'nav-item navbar__FAQ', 'link_item_class' => 'nav-link' ) );
 		?>
             
             
