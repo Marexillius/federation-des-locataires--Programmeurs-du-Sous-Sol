@@ -55,16 +55,19 @@
            
             <!-- Hamburger button -->
             <!-- Navigation -->
+<div id="mainNav" class="collapse navbar-collapse">
+
 
 				<?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
 			wp_nav_menu( array( 
-				'theme_location' => 'main-menu','container_class' => 'collapse navbar-collapse', 'container_id' => 'mainNav' ,
+				'theme_location' => 'main-menu',
 				'menu_class' => 'navbar-nav d-flex w-100 justify-content-between',
 				'menu_id' => 'nav-menu', 
-				'list_item_class' => 'nav-item navbar__FAQ', 'link_item_class' => 'nav-link' ) );
+				'list_item_class' => 'nav-item',
+				'link_item_class' => 'nav-link' ) );
 		?>
-            
+   </div>         
             
         </div>
         <a class="navbar-brand navbar__logo" href="index.html"><a id="logo" href="#accueil" class="nav-link navbar__logo">FLHLMQ</a></a>

@@ -6,7 +6,7 @@
 // Fermeture de la zone de contenu principale ?>
 </main>
 
-<footer>
+<footer class="footer">
 <div class="footer__pages">
         <a href="" class="footer__item">Accueil</a>
         <a href="" class="footer__item">Nouvelles</a>

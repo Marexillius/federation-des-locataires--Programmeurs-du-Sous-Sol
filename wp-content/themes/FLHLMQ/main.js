@@ -18,7 +18,7 @@ OriginalSiteButton.addEventListener("click", function() {
     window.open("https://www.flhlmq.com/fr", "_blank");
 })
 
-const swiperHero = new Swiper('.hero__swipper', {
+/*const swiperHero = new Swiper('.hero__swipper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -36,13 +36,13 @@ const swiperHero = new Swiper('.hero__swipper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-});
+});*/
 
 // #####################################
 //    S E R V I C E S   O F F E R T S
 // #####################################
 // Alexandre
-const swiperService = new Swiper('.service__swipper', {
+/*const swiperService = new Swiper('.service__swipper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -53,7 +53,7 @@ const swiperService = new Swiper('.service__swipper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-});
+});*/
 
 // Alexandre
 try {
