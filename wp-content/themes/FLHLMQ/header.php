@@ -55,28 +55,12 @@
            
             <!-- Hamburger button -->
             <!-- Navigation -->
-            <div id="mainNav" class="collapse navbar-collapse ">
-                <ul id="nav-menu" class="navbar-nav d-flex w-100 justify-content-between">
-                    <li class="nav-item navbar__accueil">
-                        <a href="#appli" class="nav-link navbar__accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item navbar__nouvelles">
-                        <a href="#fonctionnalités" class="nav-link navbar__nouvelles">Nouvelles</a>
-                    </li>
-                    <li class="nav-item navbar__services">
-                        <a href="#en_voir_plus" class="nav-link navbar__services">Services</a>
-                    </li>
-                    <li class="nav-item navbar__equipes">
-                        <a href="#témoignages" class="nav-link navbar__equipes">Équipes</a>
-                    </li>
-                    <li class="nav-item navbar__FAQ">
-                        <a href="#FAQ" class="nav-link navbar__FAQ">FAQ</a>
-                    </li>
-                    <li class="nav-item navbar__propos">
-                        <a href="#infolettre" class="nav-link navbar__propos">À propos</a>
-                    </li>
-                </ul>
-            </div>
+			 
+				<?php 
+			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
+			wp_nav_menu( array( 'theme_location' => 'main-menu','container_class' => 'collapse navbar-collapse', 'container_id' => 'mainNav' ,'menu_class' => 'navbar-nav d-flex w-100 justify-content-between','menu_id' => 'nav-menu', 'list_item_class' => 'nav-item navbar__FAQ', 'link_item_class' => 'nav-link' ) );
+		?>
+            
             
         </div>
         <a class="navbar-brand navbar__logo" href="index.html"><a id="logo" href="#accueil" class="nav-link navbar__logo">FLHLMQ</a></a>
