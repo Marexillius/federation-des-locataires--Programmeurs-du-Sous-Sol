@@ -1,11 +1,3 @@
-/*
-Theme Name: Fédération des locataires d'habitations à loyer modique du Québec
-Author: Programmeurs du Sous-Sol
-Author URI: https://les-programmeurs-du-sous-sol.tim-momo.com
-Description: Thème de la Fédération des locataires d'habitations à loyer modique du Québec.
-Version: 1.0
--------------------------------------------------------------- */
-
 @use "partials-scss/variables";
 @use "partials-scss/footer";
 @use "partials-scss/navigationBar";
@@ -24,6 +16,14 @@ Version: 1.0
 @use "partials-scss/contact";
 
 @use "partials-scss/mediaQuery"; //has to be the last one so it doesnt get over written
+
+/*
+Theme Name: Fédération des locataires d'habitations à loyer modique du Québec
+Author: Programmeurs du Sous-Sol
+Author URI: https://les-programmeurs-du-sous-sol.tim-momo.com
+Description: Thème de la Fédération des locataires d'habitations à loyer modique du Québec.
+Version: 1.0
+-------------------------------------------------------------- */
 
 *{
     box-sizing: border-box;

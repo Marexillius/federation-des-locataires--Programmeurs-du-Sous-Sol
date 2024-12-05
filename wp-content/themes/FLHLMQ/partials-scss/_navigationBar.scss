@@ -21,7 +21,7 @@ a {
 
 // Jay & Ian
 .navbar {
-  display: grid;
+  display: grid !important;
   grid-template-areas: "menu menu menu logo"
                         "title title search search"
                         "title title search search";
