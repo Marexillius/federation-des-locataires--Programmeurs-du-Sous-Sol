@@ -1,6 +1,7 @@
 <?php 
 /**
  * 	Template Name: À propos
+ * Template Post Type: post, page, product
  * 	Identique à page, mais avec une barre latérale
  */
 
