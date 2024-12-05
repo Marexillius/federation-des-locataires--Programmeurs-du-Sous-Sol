@@ -46,7 +46,7 @@
     </div>
 
     <nav class="navbar navbar-dark navbar-expand-md">
-        <div class="container">
+        <div class="container navbar__collapse">
             
             
             <button class="navbar-toggler navbar__burger" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
