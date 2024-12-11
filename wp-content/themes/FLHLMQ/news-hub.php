@@ -7,7 +7,7 @@
  */
 
 
- // Alexandre
+// Alexandre
 get_header(); // Affiche header.php
 ?>
 <section class="allNews">
