@@ -48,11 +48,11 @@ get_header(); // Affiche header.php
 					while ($article->have_posts()) : $article->the_post();
 					?>
 
-						<div class="allNews__Item">
+						</a><div class="allNews__Item">
 							<!-- Ajoute l'image de la nouvelle wordpress -->
 							<img class="allNews__img" src='<?php the_post_thumbnail_url() ?>'>
 							<!-- Ajoute le titre de la nouvelle wordpress -->
-							<h2 class="allNews__titreCarte"><?php the_title() ?></h2>
+							<a href='<?php the_permalink() ?>'><h2 class="allNews__titreCarte"><?php the_title() ?></h2></a>
 							<!-- Ajoute la description preview de la nouvelle wordpress -->
 							<p class="allNews__paraCarte"><?php echo esc_html(get_field('previewnouvelle')); ?></p>
 						</div>

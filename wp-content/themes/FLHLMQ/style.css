@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Impact";
-  src: url(../../../sources/assets/fonts/impact.ttf) format("truetype");
+  src: url(./fonts/impact.ttf) format("truetype");
 }
 @font-face {
   font-family: "Metrophobic";
-  src: url(../../../sources/assets/fonts/Metrophobic-Regular.ttf) format("truetype");
+  src: url(./fonts/Metrophobic-Regular.ttf) format("truetype");
 }
 .footer {
   background-color: #1C5D99;

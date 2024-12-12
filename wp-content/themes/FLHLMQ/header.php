@@ -70,7 +70,7 @@
    </div>         
             
         </div>
-        <a class="navbar-brand navbar__logo" href="index.html"><a id="logo" href="#accueil" class="nav-link navbar__logo">FLHLMQ</a></a>
+        <a class="navbar-brand navbar__logo" href="index.html"><a id="logo" href="<?php echo get_home_url(); ?>" class="nav-link navbar__logo">FLHLMQ</a></a>
         
         <p class="navbar__titre" >Fédération des locataires d’habitations à loyer modique du Québec</p>
         <div class="navbar__links">

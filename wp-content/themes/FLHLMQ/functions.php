@@ -18,7 +18,7 @@ register_nav_menus(
 			2. 'Menu principal' = Nom dans l'admin
 			3. 'Menu principal du site' = Description dans l'admin */
 		'main-menu' => __( 'Menu principal', 'Menu principal du site' ),
-		"footer-menu" => __("Footer", "footer menu") 
+		"footer-menu" => __("Footer", "footer menu")
 		/* Dupliquer cette ligne si vous désirez déclarer d'autres menus */
 	)
 );
