@@ -68,10 +68,10 @@ get_header(); // Affiche header.php
             <h1>Prochaine nouvelle</h1>
             <p>Cliquer pour passer à la prochaine nouvelle.</p>
             <div class="savior">
-                <h2 class="savior__title">Demande record de HLM à Saguenay
+                <h2 class="savior__title"><?php the_title(); // Titre de la page ?>
                 </h2>
                 <div class="nextNews__link">&#x27A4;</div>
-                <img class="savior__image" src="../../../sources/medias/hlm saguenay.png" alt="">
+                <img class="savior__image" src="<?php bloginfo('template_url'); ?>/images/upGraph_white.png" alt="">
             </div>
     </div>
 <?php endwhile; // Fermeture de la boucle
