@@ -44,7 +44,7 @@ get_header(); // Affiche header.php
                 <div class="savior__icon">
                   <img src="<?php bloginfo('template_url'); ?>/images/upGraph_white.png" itemprop="image">  
                 </div>
-                <h2 class="savior__title" itemprop="name contentLocation"><?php the_title(); // Titre de la page ?></h2>
+                <h3 class="savior__title" itemprop="name contentLocation"><?php the_title(); // Titre de la page ?></h2>
                 <p class="content__cat" id="manif" itemprop="genre">Manifestation</p>
             </div>
             <img class="savior__image" src="<?php the_post_thumbnail_url() ?>" alt="">
