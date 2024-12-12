@@ -12,15 +12,24 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
+<section>
+
+			<div class="contenu">
+            <div class="savior">
+                <div class="savior__hero">
+                    <div class="savior__icon">
+                      <img src="<?php bloginfo('template_url'); ?>/images/presentation.png" alt="">  
+                    </div>
+                    <h2 class="savior__title"><?php the_title(); // Titre de la page ?></h2>
+                </div>
+                <img class="savior__image" src="<?php the_post_thumbnail_url() ?>" alt="">
+            </div>
+	
 		
-		<?php the_content(); // Contenu principal de la page ?>
-	</article>
+		
+			<?php the_content(); // Contenu principal de la page ?>
+		</div>
+</section>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
