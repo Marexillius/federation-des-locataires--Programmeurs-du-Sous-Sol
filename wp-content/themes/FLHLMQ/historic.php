@@ -16,7 +16,6 @@ get_header(); // Affiche header.php
 		// Puis affiche les posts
 		while (have_posts()) : the_post();
 	?>
-			?>
 			<div class="savior">
 				<div class="savior__hero">
 					<div class="savior__icon">
