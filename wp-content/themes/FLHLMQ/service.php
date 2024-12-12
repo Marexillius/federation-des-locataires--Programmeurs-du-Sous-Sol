@@ -7,26 +7,64 @@
 
 get_header(); // Affiche header.php
 
-if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 
-	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
-	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
+
+<article itemscope itemtype="https://schema.org/NewsArticle">
+<?php
+				// Check si y'a des posts
+				if (have_posts()) :
+					// Crée un tableau avec les nouvelles ordonnées
+					$service = array(
+						'orderby' => array(
+							// Ordonne le tableau par les nouvelles les plus récentes d'abord.
+							'date' => 'DESC',
+						),
+						// collecte les post types des nouvelles
+						'post_type' => 'service',  'posts_per_page' => 1
+					);
+					$article = new WP_Query($service);
+					while ($article->have_posts()) : $article->the_post();
+
+				?>
+	
+
+			<article itemscope itemtype="https://schema.org/NewsArticle">
+        <div class="linkInTime">
+            <p class="linkInTime__ariane">Accueil / <a href="#">Services</a></p>
+            <div class="linkInTime__time" itemprop="author dateCreated">Par 
+                <p itemprop="author">Rédaction</p> - 
+                <p itemprop="author dateCreated">Jeu 22/08/2024</p>
+            </div>          
+        </div>
+
+        <div class="savior">
+            <div class="savior__hero">
+                <div class="savior__icon">
+                  <img src="<?php bloginfo('template_url'); ?>/images/upGraph_white.png" itemprop="image">  
+                </div>
+                <h2 class="savior__title" itemprop="name contentLocation"><?php the_title(); // Titre de la page ?></h2>
+            </div>
+            <img class="savior__image" src="<?php the_post_thumbnail_url() ?>" alt="">
+        </div>
+        <div class="content">
 		
-		<?php the_content(); // Contenu principal de la page ?>
+		<h2 ><?php the_title()?></h2>
+<?php the_content(); // Contenu principal de la page ?>
+
+
+		</div>
+        </div>
+		
 	</article>
 <?php endwhile; // Fermeture de la boucle
+
+
 
 else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
+
 get_footer(); // Affiche footer.php 
 ?>
