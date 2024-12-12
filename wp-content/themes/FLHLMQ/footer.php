@@ -11,11 +11,9 @@
 <?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
 			wp_nav_menu( array( 
-				'theme_location' => 'main-menu',
-				'menu_class' => 'navbar-nav d-flex w-100 justify-content-between',
-				'menu_id' => 'nav-menu', 
-				'list_item_class' => 'nav-item',
-				'link_item_class' => 'nav-link' ) );
+				'theme_location' => 'footer-menu',
+                'list_item_class' => 'footer__pages',
+				'link_item_class' => 'footer__item',) );
 		?>
         <!--<a href="" class="footer__item">Accueil</a>
         <a href="" class="footer__item">Nouvelles</a>

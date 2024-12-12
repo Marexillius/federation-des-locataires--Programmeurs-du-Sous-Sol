@@ -22,7 +22,6 @@ get_header(); // Affiche header.php?>
 		<?php
 if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
-	while ( have_posts() ) : the_post(); 
 	$member = array(
 		'orderby' => array(
 			// Ordonne le tableau par les nouvelles les plus récentes d'abord.
@@ -32,9 +31,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		'post_type' => 'membre',
 	);
 	$article = new WP_Query($member);
+    while ($article->have_posts()) : $article->the_post();
 	?>
             <div class="card__member">
-                <div class="card__member__image card__member__image--robert" style="background-image: url('<?php the_post_thumbnail_url() ?>');"></div>
+                <div class="card__member__image card__member__image--elisabeth" style="background-image: url('<?php the_post_thumbnail_url() ?>');"></div>
                 <p class="card__member__description"><?php the_title() ?>, <?php the_content() ?></p>
             </div>
 			<?php endwhile ?>
