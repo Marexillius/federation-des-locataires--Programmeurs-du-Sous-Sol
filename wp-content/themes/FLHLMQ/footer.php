@@ -8,11 +8,20 @@
 
 <footer class="footer">
 <div class="footer__pages">
-        <a href="" class="footer__item">Accueil</a>
+<?php 
+			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
+			wp_nav_menu( array( 
+				'theme_location' => 'main-menu',
+				'menu_class' => 'navbar-nav d-flex w-100 justify-content-between',
+				'menu_id' => 'nav-menu', 
+				'list_item_class' => 'nav-item',
+				'link_item_class' => 'nav-link' ) );
+		?>
+        <!--<a href="" class="footer__item">Accueil</a>
         <a href="" class="footer__item">Nouvelles</a>
         <a href="" class="footer__item">Services</a>
         <a href="" class="footer__item">Équipes</a>
-        <a href="" class="footer__item">FAQ</a>
+        <a href="" class="footer__item">FAQ</a>-->
     </div>
     <div class="footer__coordonnees">
         <p class="footer_item">- Nous joindre</p>
