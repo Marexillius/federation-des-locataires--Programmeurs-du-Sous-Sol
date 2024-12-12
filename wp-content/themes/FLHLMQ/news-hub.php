@@ -43,16 +43,18 @@ get_header(); // Affiche header.php
 						'post_type' => 'nouvelle',
 					);
 					$article = new WP_Query($nouvelle);
-					while ($article->have_posts()) : $article->the_post();
 				?>
+					<?php
+					while ($article->have_posts()) : $article->the_post();
+					?>
 
 						<div class="allNews__Item">
 							<!-- Ajoute l'image de la nouvelle wordpress -->
-							<img class="allNews__img" src='<?php the_post_thumbnail_url()?>'>
+							<img class="allNews__img" src='<?php the_post_thumbnail_url() ?>'>
 							<!-- Ajoute le titre de la nouvelle wordpress -->
-							<h2 class="allNews__titreCarte"><?php the_title()?></h2>
+							<h2 class="allNews__titreCarte"><?php the_title() ?></h2>
 							<!-- Ajoute la description preview de la nouvelle wordpress -->
-							<p class="allNews__paraCarte"><?php echo esc_html ( get_field( 'previewnouvelle' ) ); ?></p>
+							<p class="allNews__paraCarte"><?php echo esc_html(get_field('previewnouvelle')); ?></p>
 						</div>
 					<?php endwhile ?>
 			</div>
@@ -61,10 +63,10 @@ get_header(); // Affiche header.php
 	</div>
 </section>
 <?php
-				else : // Si URL est invalide
-					// Montre la page 404
-					get_template_part('partials/404');
-				endif;
-				// Affiche le footer
-				get_footer();
+	else : // Si URL est invalide
+	// Montre la page 404
+		get_template_part('partials/404');
+		endif;
+		// Affiche le footer
+		get_footer();
 ?>

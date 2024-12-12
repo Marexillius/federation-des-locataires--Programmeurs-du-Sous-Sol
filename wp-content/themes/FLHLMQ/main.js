@@ -18,7 +18,7 @@ OriginalSiteButton.addEventListener("click", function() {
     window.open("https://www.flhlmq.com/fr", "_blank");
 })
 
-/*const swiperHero = new Swiper('.hero__swipper', {
+/* const swiperHero = new Swiper('.hero__swipper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -42,7 +42,8 @@ OriginalSiteButton.addEventListener("click", function() {
 //    S E R V I C E S   O F F E R T S
 // #####################################
 // Alexandre
-/*const swiperService = new Swiper('.service__swipper', {
+/*
+const swiperService = new Swiper('.service__swipper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -56,6 +57,7 @@ OriginalSiteButton.addEventListener("click", function() {
 });*/
 
 // Alexandre
+/*
 try {
   const robertCard = document.querySelector(".modal__member--robert");
   const elisabethCard = document.querySelector(".modal__member--elisabeth");
@@ -79,4 +81,4 @@ try {
   }
 } catch(err) {
   console.log(err);
-}
+}*/
